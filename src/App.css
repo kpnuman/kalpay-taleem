@@ -1,0 +1,402 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden !important;
+}
+
+.row{
+  margin-right: 0px !important;
+}
+/* Your custom CSS for the menu items */
+.navbar-custom {
+  background-color: #ffffff; /* Background color of the navbar */
+  /*border-bottom: 1px solid #e5e5e5; !* Add a bottom border for separation *!*/
+  font-family: 'Poppins', sans-serif; /* Use the specified font-family */
+  margin-left: 5rem;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700; /* Use bold font */
+  font-size: 16px;
+  line-height: 32px;
+  color: #20282B; /* Text/Title color */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  font-weight: 700; /* Use bold font */
+  font-size: 16px;
+  line-height: 32px;
+  color: #20282B; /* Text/Title color */
+}
+
+.navbar-toggler{
+  background-color: #FFFFFF !important;
+}
+
+.logo{
+  margin-left: 10rem;
+}
+
+.menu{
+  margin-left: 15rem;
+}
+
+.hero-section {
+  height: auto !important;
+  /*width: auto !important;*/
+  background: #FFD844;
+  padding-bottom: 15rem;
+}
+
+.hero-section-study-now-heading{
+  /* Study Now Pay Later */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 80px;
+  /* or 118% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #BC263A;
+  padding-top: 2rem;
+}
+
+.hero-section-pay-later-heading{
+  /* Study Now Pay Later */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 80px;
+  /* or 118% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
+
+.hero-section-left{
+  padding-left: 5rem;
+}
+
+.hero-section-text{
+  font-style: normal;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  /* Text/Title */
+  color: #20282B;
+  font-weight: bolder;
+}
+
+.hero-section-para{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+  color: #20282B;
+}
+
+.btn{
+  background: #BC263A;
+  border-radius: 15px;
+  width: 180px;
+  height: 60px;
+  text-decoration: none;
+
+}
+
+.btn-text{
+  font-family: 'Montserrat','Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none !important;;
+}
+
+.btn-text:hover{
+  color: #FFFFFF !important;
+}
+
+.hero-img{
+  padding-top: 2rem;
+  padding-left: 10px;
+  /*width: 75%;*/
+}
+
+/* CSS file (e.g., styles.css) */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 30px 180px 30px;
+  gap: 10px;
+  width: 325px;
+  height: 234px;
+  margin-top: -10rem;
+  background: #FFFFFF;
+  border: 1.4px solid #F5BE3D;
+  border-radius: 40px;
+}
+.col-md-4{
+  flex: 0 0 !important;
+}
+.box-icon {
+  /* Add styles for the icon container here */
+  padding-top: 2rem;
+  /*margin-bottom: -40px;*/
+  vertical-align: middle !important;
+}
+
+.box-heading {
+  /* Add styles for the small heading here */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-top: -33px !important;
+}
+
+.box-paragraph {
+  /* Add styles for the paragraph here */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 23px;
+  /* or 144% */
+  text-align: center;
+  color: #20282B;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+
+.box-icon-2 {
+  /* Add styles for the icon container here */
+  padding-top: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.box-heading-2 {
+  /* Add styles for the small heading here */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-top: -48px;
+
+}
+
+.box-paragraph-2 {
+  /* Add styles for the paragraph here */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 23px;
+  /* or 144% */
+  text-align: center;
+  color: #20282B;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+
+/* styles.css */
+
+.partner-section {
+  background: linear-gradient(360deg, #F0F0F0 0%, rgba(248, 248, 248, 0) 100%);
+  padding: 40px; /* Adjust as needed for horizontal spacing */
+}
+
+.partner-heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #20282B;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-gallery-item {
+  margin: 10px; /* Adjust as needed for spacing between images */
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  /* Add more styling for images as needed */
+}
+
+/* Add this CSS to your existing stylesheet (e.g., styles.css) */
+
+/* Styles for the image gallery container */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallery-item {
+  margin: 10px; /* Adjust as needed for spacing between images */
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  /* Add more styling for images as needed */
+}
+
+/* Styles for the gallery navigation controls */
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust for spacing between images and controls */
+}
+
+.gallery-button {
+  padding: 8px 16px;
+  background-color: #007BFF; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 4px;
+  margin: 0 8px; /* Adjust for spacing between buttons */
+  cursor: pointer;
+}
+
+.gallery-button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+.slick-prev:before, .slick-next:before{
+  color: black !important;
+}
+
+.why-image{
+  text-align: center;
+  padding-top: 5rem !important;
+}
+
+.why-image img{
+  /* max-width: 100%; */
+  height: 450px;
+  width: auto;
+}
+
+.why-section{
+  /*text-align: center;*/
+  padding-top: 5rem !important;
+}
+
+.why-choose{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #BC263A;
+}
+
+.why-taleem{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #20282B;
+}
+
+.why-section-heading{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-top: 20px;
+  color: #20282B;
+}
+
+.why-section-paragraph{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  /* or 144% */
+
+  color: #5C5C5C;
+}
+
+.why-section-icon{
+  margin-left: -45px;
+}
+
+.why-heading-text{
+  margin-left: -20px;
+}
+
+.why-taleem-content{
+  height: 100px;
+}
+
+/* Additional styling for the buttons can be added as needed */
+
+@media (min-width: 100px) and (max-width: 979px) {
+  .navbar-custom {
+    margin-left: 0 !important;
+  }
+  .hero-section{
+    padding-bottom: 1rem;
+  }
+  .menu{
+    margin-left: 0;
+  }
+  .hero-section-left{
+    padding-left: 10px !important;
+    justify-content: center !important;
+  }
+
+  .box {
+    margin-top: 1rem !important;
+  }
+  .why-section{
+    margin-left: 0px !important;
+    text-align: center !important;
+  }
+  .why-section-icon {
+    margin-left: 0px !important;
+    margin-bottom: -40px !important;
+  }
+
+  .why-taleem-content{
+    justify-content: center !important;
+    height: auto !important;
+  }
+
+  .why-heading-text {
+     margin-left: 0px;
+  }
+
+  .why-image img{
+    height: auto !important;
+  }
+}
+
+@media (max-width: 768px){
+  .image-gallery{
+    display: block;
+    text-align: center;
+  }
+}
