@@ -600,7 +600,244 @@ body{
   margin: 0px 40px 0px 50px;
 }
 
-/* Additional styling for the buttons can be added as needed */
+.hero-section-semester-fee-heading{
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  /* or 118% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #BC263A;
+  padding-top: 2rem;
+}
+
+.hero-section-semester-fee-text{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+  color: #20282B;
+}
+
+.hero-section-semester-fee{
+  padding-bottom: 1rem;
+  height: auto !important;
+  /*width: auto !important;*/
+  background: #FFD844;
+}
+
+.continously-expanding-heading{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* Text/Title */
+  color: #20282B;
+}
+
+.loan-process-section{
+  background: linear-gradient(90deg, #F0F0F0 0%, rgba(248, 248, 248, 0) 100%);
+  height: auto !important;
+}
+
+.loan-process-left-section{
+  padding-left: 10rem;
+  padding-top: 6rem !important;
+}
+
+.loan-process-section-heading{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  /* or 133% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #BC263A;
+}
+
+.loan-process-section-paragraph{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+  padding-right: 7rem;
+  color: #20282B;
+}
+
+.loan-process-heading{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+  /*text-align: center;*/
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  padding-left: 5rem;
+  /* Text/Title */
+  color: #20282B;
+}
+
+/* CSS */
+/* CSS */
+.step-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.step-number h4 {
+  background-color: #BC263A; /* Add desired background color */
+  color: white; /* Text color */
+  border-radius: 50%; /* To make it circular */
+  width: 51px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px; /* Center the text vertically */
+}
+
+.step-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step-description h6{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #20282B;
+}
+
+.step-description p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  /* identical to box height, or 144% */
+
+  color: #5C5C5C;
+}
+
+.loan-process-section-headline{
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  /* identical to box height, or 144% */
+  padding-top: 20px;
+  color: #5C5C5C;
+  padding-bottom: 20px;
+}
+
+.bar-container {
+  position: absolute;
+  width: 350px;
+  height: 0;
+  margin-top: 19rem !important;
+}
+
+.bar {
+  border: 2px solid #BC263A;
+  transform: rotate(90deg);
+  width: 100%; /* Set to 100% to cover the entire container */
+  position: absolute; /* Position the bar absolutely within the container */
+  top: 0; /* Place the bar at the top of the container */
+  margin-left: -150px;
+}
+
+.loan-calculator-heading{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #20282B;
+}
+
+.loan-calculator-box{
+  background: #FFFFFF;
+  border: 1.4px solid #F5BE3D;
+  /* shadow */
+  box-shadow: 1px 23px 43px rgba(0, 0, 0, 0.08);
+  border-radius: 40px;
+  width: 464px;
+  height: 425px;
+}
+
+.price-input{
+  border: none;
+  border-bottom: 1px solid #cfc4c4;
+  padding: 2px;
+  margin-left: 3rem;
+  width: 78%;
+}
+
+/* Styles for the slider container */
+.slider-container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Styles for the custom slider track (bar) */
+.custom-slider {
+  width: 100%;
+  height: 3px;
+  background: #e5acb4; /* Customize the background color for the slider track */
+  border: none;
+  outline: none;
+  appearance: none;
+  position: relative;
+}
+
+.custom-slider::-webkit-slider-thumb {
+  appearance: none; /* Remove the default appearance */
+  width: 20px;
+  height: 20px;
+  background: #bc263a; /* Customize the background color for the slider thumb */
+  border: 2px solid #bc263a; /* Optional: Add a border to the slider thumb */
+  border-radius: 50%; /* Make it a circle */
+  cursor: pointer;
+  margin-top: -20px;
+  z-index: 2; /* Ensure thumb appears above the custom track */
+}
+
+.custom-slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: black; /* Background color for the selected range */
+  z-index: 1; /* Ensure the custom track appears below the thumb */
+}
+
+
+/* Styles for the breakpoint labels */
+.breakpoint-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.breakpoint-labels span {
+  flex: 1;
+  text-align: center;
+}
+
 
 @media (min-width: 100px) and (max-width: 979px) {
   .navbar-custom {
@@ -625,6 +862,7 @@ body{
     margin-left: 0px !important;
     text-align: center !important;
   }
+
   .why-section-icon {
     margin-left: 0px !important;
     margin-bottom: -40px !important;
@@ -678,6 +916,26 @@ body{
     text-align: center;
     font-size: 12px !important;
   }
+
+  .loan-process-left-section {
+    padding-left: 0rem;
+    text-align: center;
+    padding-top: 0rem !important;
+  }
+
+  .loan-process-section-paragraph{
+    text-align: center !important;
+    padding-right: 0 !important;
+  }
+
+  .bar-container{
+    display: none;
+  }
+
+  .step-number{
+    margin-left: 2px;
+  }
+
 }
 
 @media (max-width: 768px){
