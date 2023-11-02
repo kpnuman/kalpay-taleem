@@ -12,6 +12,7 @@ import mapped from '../../public/images/mapped.png'
 import dversity from '../../public/images/dversity.png'
 import whyTaleem from '../../public/images/why-taleem.png'
 import mosque from '../../public/images/mosque.png'
+import faq from '../../public/images/faq.png'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -123,7 +124,76 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-
+            <div className="row journey justify-content-center align-items-center text-center">
+                <h3 className="journey-heading"> Our Journey So Far</h3>
+                <div className="row justify-content-center gap-5">
+                    <div className="col-sm-1 col-4 our-journey-box">
+                        <h4 className="our-journey-box-heading"> 150+</h4>
+                        <h6 className="our-journey-box-sub-heading"> Students Served</h6>
+                    </div>
+                    <div className="col-sm-1 col-4 our-journey-box">
+                        <h4 className="our-journey-box-heading"> 25M+</h4>
+                        <h6 className="our-journey-box-sub-heading"> Loans Distributed</h6>
+                    </div>
+                    <div className="col-sm-1 col-4 our-journey-box">
+                        <h4 className="our-journey-box-heading"> 25M+</h4>
+                        <h6 className="our-journey-box-sub-heading"> Loans Distributed</h6>
+                    </div>
+                </div>
+            </div>
+            <div className="row d-lg-flex faq-section">
+                <div className="col-lg-6 col-sm-12 justify-content-center text-center align-items-center">
+                    <img src={faq} className="faq-section-img justify-content-center align-items-center" />
+                </div>
+                <div className="col-lg-6 col-sm-12 faq-section-right">
+                    <h4 className="faq-section-heading"> FAQs</h4>
+                    <p className="faq-section-paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem.</p>
+                    <div className="mt-4 mb-4">
+                        <div className="accordion" id="myAccordion">
+                            <div className="accordion-item mb-2">
+                                <h2 className="accordion-header" id="headingOne">
+                                    <button type="button" className="accordion-button accordion-heading" data-bs-toggle="collapse" data-bs-target="#collapseOne">What services does your Herbvest provide?</button>
+                                </h2>
+                                <div id="collapseOne" className="accordion-collapse collapse show accordion-section-content" data-bs-parent="#myAccordion">
+                                    <div className="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item mb-2">
+                                <h2 className="accordion-header" id="headingTwo">
+                                    <button type="button" className="accordion-button accordion-heading" data-bs-toggle="collapse" data-bs-target="#collapseTwo">What services does your Herbvest provide?</button>
+                                </h2>
+                                <div id="collapseTwo" className="accordion-collapse collapse accordion-section-content" data-bs-parent="#myAccordion">
+                                    <div className="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item mb-2">
+                                <h2 className="accordion-header" id="headingTwo">
+                                    <button type="button" className="accordion-button accordion-heading" data-bs-toggle="collapse" data-bs-target="#collapseThree">What services does your Herbvest provide?</button>
+                                </h2>
+                                <div id="collapseThree" className="accordion-collapse collapse accordion-section-content" data-bs-parent="#myAccordion">
+                                    <div className="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravid</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item mb-2">
+                                <h2 className="accordion-header" id="headingTwo">
+                                    <button type="button" className="accordion-button accordion-heading" data-bs-toggle="collapse" data-bs-target="#collapseFour">What services does your Herbvest provide?</button>
+                                </h2>
+                                <div id="collapseFour" className="accordion-collapse collapse accordion-section-content" data-bs-parent="#myAccordion">
+                                    <div className="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
