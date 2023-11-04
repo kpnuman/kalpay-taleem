@@ -1,42 +1,49 @@
-body{
+body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden !important;
 }
 
-.row{
+.row {
   margin-right: 0px !important;
 }
+
 /* Your custom CSS for the menu items */
 .navbar-custom {
-  background-color: #ffffff; /* Background color of the navbar */
+  background-color: #ffffff;
+  /* Background color of the navbar */
   /*border-bottom: 1px solid #e5e5e5; !* Add a bottom border for separation *!*/
-  font-family: 'Poppins', sans-serif; /* Use the specified font-family */
+  font-family: 'Poppins', sans-serif;
+  /* Use the specified font-family */
   margin-left: 5rem;
 }
 
 .navbar-custom .navbar-brand {
-  font-weight: 700; /* Use bold font */
+  font-weight: 700;
+  /* Use bold font */
   font-size: 16px;
   line-height: 32px;
-  color: #20282B; /* Text/Title color */
+  color: #20282B;
+  /* Text/Title color */
 }
 
 .navbar-custom .navbar-nav .nav-link {
-  font-weight: 700; /* Use bold font */
+  font-weight: 700;
+  /* Use bold font */
   font-size: 16px;
   line-height: 32px;
-  color: #20282B; /* Text/Title color */
+  color: #20282B;
+  /* Text/Title color */
 }
 
-.navbar-toggler{
+.navbar-toggler {
   background-color: #FFFFFF !important;
 }
 
-.logo{
+.logo {
   margin-left: 10rem;
 }
 
-.menu{
+.menu {
   margin-left: 15rem;
 }
 
@@ -47,7 +54,7 @@ body{
   padding-bottom: 15rem;
 }
 
-.hero-section-study-now-heading{
+.hero-section-study-now-heading {
   /* Study Now Pay Later */
   font-style: normal;
   font-weight: 700;
@@ -59,7 +66,7 @@ body{
   padding-top: 2rem;
 }
 
-.hero-section-pay-later-heading{
+.hero-section-pay-later-heading {
   /* Study Now Pay Later */
   font-style: normal;
   font-weight: 700;
@@ -70,11 +77,11 @@ body{
   color: #000000;
 }
 
-.hero-section-left{
+.hero-section-left {
   padding-left: 5rem;
 }
 
-.hero-section-text{
+.hero-section-text {
   font-style: normal;
   font-size: 32px;
   line-height: 40px;
@@ -85,7 +92,7 @@ body{
   font-weight: bolder;
 }
 
-.hero-section-para{
+.hero-section-para {
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
@@ -93,7 +100,7 @@ body{
   color: #20282B;
 }
 
-.btn{
+.btn {
   background: #BC263A;
   border-radius: 15px;
   width: 180px;
@@ -102,21 +109,22 @@ body{
 
 }
 
-.btn-text{
-  font-family: 'Montserrat','Poppins', sans-serif;
+.btn-text {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
-  text-decoration: none !important;;
+  text-decoration: none !important;
+  ;
 }
 
-.btn-text:hover{
+.btn-text:hover {
   color: #FFFFFF !important;
 }
 
-.hero-img{
+.hero-img {
   padding-top: 2rem;
   padding-left: 10px;
   /*width: 75%;*/
@@ -137,9 +145,11 @@ body{
   border: 1.4px solid #F5BE3D;
   border-radius: 40px;
 }
-.col-md-4{
+
+.col-md-4 {
   flex: 0 0 !important;
 }
+
 .box-icon {
   /* Add styles for the icon container here */
   padding-top: 2rem;
@@ -208,7 +218,8 @@ body{
 
 .partner-section {
   background: linear-gradient(360deg, #F0F0F0 0%, rgba(248, 248, 248, 0) 100%);
-  padding: 40px; /* Adjust as needed for horizontal spacing */
+  padding: 40px;
+  /* Adjust as needed for horizontal spacing */
 }
 
 .partner-heading {
@@ -227,7 +238,8 @@ body{
 }
 
 .image-gallery-item {
-  margin: 10px; /* Adjust as needed for spacing between images */
+  margin: 10px;
+  /* Adjust as needed for spacing between images */
 }
 
 .image-gallery img {
@@ -246,7 +258,8 @@ body{
 }
 
 .image-gallery-item {
-  margin: 10px; /* Adjust as needed for spacing between images */
+  margin: 10px;
+  /* Adjust as needed for spacing between images */
 }
 
 .image-gallery img {
@@ -260,44 +273,50 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Adjust for spacing between images and controls */
+  margin-top: 20px;
+  /* Adjust for spacing between images and controls */
 }
 
 .gallery-button {
   padding: 8px 16px;
-  background-color: #007BFF; /* Button background color */
-  color: #fff; /* Button text color */
+  background-color: #007BFF;
+  /* Button background color */
+  color: #fff;
+  /* Button text color */
   border: none;
   border-radius: 4px;
-  margin: 0 8px; /* Adjust for spacing between buttons */
+  margin: 0 8px;
+  /* Adjust for spacing between buttons */
   cursor: pointer;
 }
 
 .gallery-button:hover {
-  background-color: #0056b3; /* Button background color on hover */
+  background-color: #0056b3;
+  /* Button background color on hover */
 }
 
-.slick-prev:before, .slick-next:before{
+.slick-prev:before,
+.slick-next:before {
   color: black !important;
 }
 
-.why-image{
+.why-image {
   text-align: center;
   padding-top: 5rem !important;
 }
 
-.why-image img{
+.why-image img {
   /* max-width: 100%; */
   height: 450px;
   width: auto;
 }
 
-.why-section{
+.why-section {
   /*text-align: center;*/
   padding-top: 5rem !important;
 }
 
-.why-choose{
+.why-choose {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -307,7 +326,7 @@ body{
   color: #BC263A;
 }
 
-.why-taleem{
+.why-taleem {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -318,7 +337,7 @@ body{
   color: #20282B;
 }
 
-.why-section-heading{
+.why-section-heading {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -329,7 +348,7 @@ body{
   color: #20282B;
 }
 
-.why-section-paragraph{
+.why-section-paragraph {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -339,19 +358,19 @@ body{
   color: #5C5C5C;
 }
 
-.why-section-icon{
+.why-section-icon {
   margin-left: -45px;
 }
 
-.why-heading-text{
+.why-heading-text {
   margin-left: -20px;
 }
 
-.why-taleem-content{
+.why-taleem-content {
   height: 100px;
 }
 
-.journey{
+.journey {
   padding-top: 3rem;
   margin-top: 3rem;
   background-image: url('../public/images/our-journey.png');
@@ -363,7 +382,7 @@ body{
   margin-bottom: 30px;
 }
 
-.journey-heading{
+.journey-heading {
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
@@ -374,7 +393,7 @@ body{
   padding-bottom: 25px;
 }
 
-.our-journey-box{
+.our-journey-box {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -400,7 +419,7 @@ body{
   border-radius: 30px;
 }
 
-.our-journey-box-heading{
+.our-journey-box-heading {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -411,32 +430,32 @@ body{
   color: #BC263A;
 }
 
-.our-journey-box-sub-heading{
+.our-journey-box-sub-heading {
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
-/* identical to box height, or 133% */
+  /* identical to box height, or 133% */
   font-feature-settings: 'pnum' on, 'lnum' on;
 
   color: #20282B;
 }
 
-.faq-section{
+.faq-section {
   background: linear-gradient(360deg, #F0F0F0 0%, rgba(248, 248, 248, 0) 100%) !important;
   height: auto !important;
   padding-bottom: 5rem;
   margin-top: 5rem !important;
 }
 
-.faq-section-img{
+.faq-section-img {
   padding-top: 1rem;
   text-align: center;
   width: 400px;
   height: auto;
 }
 
-.faq-section-heading{
+.faq-section-heading {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -447,7 +466,7 @@ body{
   color: #BC263A;
 }
 
-.faq-section-paragraph{
+.faq-section-paragraph {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -458,7 +477,7 @@ body{
   color: #5C5C5C;
 }
 
-.faq-section-right{
+.faq-section-right {
   padding-right: 5rem !important;
 }
 
@@ -472,7 +491,7 @@ body{
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23BC263A' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.accordion-heading{
+.accordion-heading {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -486,11 +505,11 @@ body{
   padding-left: 30px !important;
 }
 
-.collapsed{
+.collapsed {
   color: #20282B !important;
 }
 
-.accordion-section-content{
+.accordion-section-content {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -503,19 +522,19 @@ body{
   padding: 30px;
 }
 
-.card-body{
+.card-body {
   border: none !important;
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   background: #FFFFFF !important;
 }
 
-.accordion-button:focus{
+.accordion-button:focus {
   background: #FFFFFF !important;
 }
 
-.footer-reachout{
+.footer-reachout {
   padding-top: 5rem;
   /*margin-top: 3rem;*/
   background-image: url('../public/images/reachout.png');
@@ -527,7 +546,7 @@ body{
   margin-bottom: 30px;
 }
 
-.footer-reachout-heading{
+.footer-reachout-heading {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -539,7 +558,7 @@ body{
   color: #FFD844;
 }
 
-.footer-reachout-text{
+.footer-reachout-text {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -551,7 +570,7 @@ body{
   color: #FFFFFF;
 }
 
-.footer-heading{
+.footer-heading {
   font-weight: 700;
   font-size: 24px;
   line-height: 27px;
@@ -560,7 +579,7 @@ body{
   color: #BC263A;
 }
 
-.footer-paragraph{
+.footer-paragraph {
   font-weight: 400;
   font-size: 17px;
   line-height: 27px;
@@ -569,7 +588,7 @@ body{
   color: #20282B;
 }
 
-.footer-menu-heading{
+.footer-menu-heading {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -579,7 +598,7 @@ body{
   color: #BC263A;
 }
 
-.footer-menu{
+.footer-menu {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -600,7 +619,7 @@ body{
   margin: 0px 40px 0px 50px;
 }
 
-.hero-section-semester-fee-heading{
+.hero-section-semester-fee-heading {
   font-size: 54px;
   font-style: normal;
   font-weight: 700;
@@ -611,7 +630,7 @@ body{
   padding-top: 2rem;
 }
 
-.hero-section-semester-fee-text{
+.hero-section-semester-fee-text {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -621,14 +640,14 @@ body{
   color: #20282B;
 }
 
-.hero-section-semester-fee{
+.hero-section-semester-fee {
   padding-bottom: 1rem;
   height: auto !important;
   /*width: auto !important;*/
   background: #FFD844;
 }
 
-.continously-expanding-heading{
+.continously-expanding-heading {
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
@@ -640,17 +659,17 @@ body{
   color: #20282B;
 }
 
-.loan-process-section{
+.loan-process-section {
   background: linear-gradient(90deg, #F0F0F0 0%, rgba(248, 248, 248, 0) 100%);
   height: auto !important;
 }
 
-.loan-process-left-section{
+.loan-process-left-section {
   padding-left: 10rem;
   padding-top: 6rem !important;
 }
 
-.loan-process-section-heading{
+.loan-process-section-heading {
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
@@ -660,7 +679,7 @@ body{
   color: #BC263A;
 }
 
-.loan-process-section-paragraph{
+.loan-process-section-paragraph {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -670,7 +689,7 @@ body{
   color: #20282B;
 }
 
-.loan-process-heading{
+.loan-process-heading {
   font-size: 32px;
   font-weight: 700;
   line-height: 48px;
@@ -687,19 +706,25 @@ body{
 .step-number {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
+  justify-content: center;
+  /* Center vertically */
   align-items: center;
-  margin-right: 20px; /* Adjust as needed */
+  margin-right: 20px;
+  /* Adjust as needed */
 }
 
 .step-number h4 {
-  background-color: #BC263A; /* Add desired background color */
-  color: white; /* Text color */
-  border-radius: 50%; /* To make it circular */
+  background-color: #BC263A;
+  /* Add desired background color */
+  color: white;
+  /* Text color */
+  border-radius: 50%;
+  /* To make it circular */
   width: 51px;
   height: 50px;
   text-align: center;
-  line-height: 50px; /* Center the text vertically */
+  line-height: 50px;
+  /* Center the text vertically */
 }
 
 .step-description {
@@ -709,7 +734,7 @@ body{
   justify-content: center;
 }
 
-.step-description h6{
+.step-description h6 {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -720,7 +745,7 @@ body{
   color: #20282B;
 }
 
-.step-description p{
+.step-description p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -730,7 +755,7 @@ body{
   color: #5C5C5C;
 }
 
-.loan-process-section-headline{
+.loan-process-section-headline {
   font-style: italic;
   font-weight: 500;
   font-size: 16px;
@@ -751,13 +776,16 @@ body{
 .bar {
   border: 2px solid #BC263A;
   transform: rotate(90deg);
-  width: 100%; /* Set to 100% to cover the entire container */
-  position: absolute; /* Position the bar absolutely within the container */
-  top: 0; /* Place the bar at the top of the container */
+  width: 100%;
+  /* Set to 100% to cover the entire container */
+  position: absolute;
+  /* Position the bar absolutely within the container */
+  top: 0;
+  /* Place the bar at the top of the container */
   margin-left: -150px;
 }
 
-.loan-calculator-heading{
+.loan-calculator-heading {
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
@@ -768,17 +796,18 @@ body{
   color: #20282B;
 }
 
-.loan-calculator-box{
+.loan-calculator-box {
   background: #FFFFFF;
   border: 1.4px solid #F5BE3D;
   /* shadow */
   box-shadow: 1px 23px 43px rgba(0, 0, 0, 0.08);
   border-radius: 40px;
   width: 464px;
-  height: 425px;
+  height: auto;
+  padding-bottom: 3rem;
 }
 
-.price-input{
+.price-input {
   border: none;
   border-bottom: 1px solid #cfc4c4;
   padding: 2px;
@@ -796,23 +825,35 @@ body{
 .custom-slider {
   width: 100%;
   height: 3px;
-  background: #e5acb4; /* Customize the background color for the slider track */
+  background: #e5acb4;
+  /* Customize the background color for the slider track */
   border: none;
   outline: none;
   appearance: none;
   position: relative;
 }
 
+.custom-color {
+  cursor: pointer;
+  background: #e5acb4 !important;
+  color: #e5acb4 !important;
+}
+
 .custom-slider::-webkit-slider-thumb {
-  appearance: none; /* Remove the default appearance */
+  /*appearance: none;*/
+  /* Remove the default appearance */
   width: 20px;
   height: 20px;
-  background: #bc263a; /* Customize the background color for the slider thumb */
-  border: 2px solid #bc263a; /* Optional: Add a border to the slider thumb */
-  border-radius: 50%; /* Make it a circle */
+  background: #bc263a !important;
+  /* Customize the background color for the slider thumb */
+  border: 2px solid #bc263a !important;
+  /* Optional: Add a border to the slider thumb */
+  border-radius: 50%;
+  /* Make it a circle */
   cursor: pointer;
   margin-top: -20px;
-  z-index: 2; /* Ensure thumb appears above the custom track */
+  z-index: 2;
+  /* Ensure thumb appears above the custom track */
 }
 
 .custom-slider::before {
@@ -821,8 +862,10 @@ body{
   top: 0;
   left: 0;
   height: 100%;
-  background: black; /* Background color for the selected range */
-  z-index: 1; /* Ensure the custom track appears below the thumb */
+  background: black !important;
+  /* Background color for the selected range */
+  z-index: 1;
+  /* Ensure the custom track appears below the thumb */
 }
 
 
@@ -830,7 +873,7 @@ body{
 .breakpoint-labels {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
 
 .breakpoint-labels span {
@@ -839,17 +882,58 @@ body{
 }
 
 
+/* WebKit (Chrome, Safari) */
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, green 0%, green 50%, red 50%, red 100%) !important;
+}
+
+/* Firefox */
+.range-slider input[type="range"]::-moz-range-track {
+  background: linear-gradient(to right, green 0%, green 50%, red 50%, red 100%) !important;
+}
+
+.range-slider input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background-color: red !important; /* Background color of the slider track */
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: green !important; /* Color for the slider thumb */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  text-decoration: none;
+  background: #bc263a;
+}
+
 @media (min-width: 100px) and (max-width: 979px) {
   .navbar-custom {
     margin-left: 0 !important;
   }
-  .hero-section{
+
+  .hero-section {
     padding-bottom: 1rem;
   }
-  .menu{
+
+  .menu {
     margin-left: 0;
   }
-  .hero-section-left{
+
+  .hero-section-left {
     padding-left: 10px !important;
     justify-content: center !important;
   }
@@ -858,7 +942,8 @@ body{
     margin-top: 1rem !important;
     width: 250px !important;
   }
-  .why-section{
+
+  .why-section {
     margin-left: 0px !important;
     text-align: center !important;
   }
@@ -868,16 +953,16 @@ body{
     margin-bottom: -40px !important;
   }
 
-  .why-taleem-content{
+  .why-taleem-content {
     justify-content: center !important;
     height: auto !important;
   }
 
   .why-heading-text {
-     margin-left: 0px;
+    margin-left: 0px;
   }
 
-  .why-image img{
+  .why-image img {
     height: auto !important;
   }
 
@@ -885,16 +970,16 @@ body{
     padding-top: 0rem;
   }
 
-  .journey-heading{
+  .journey-heading {
     padding-top: 5rem;
   }
 
-  .faq-section-right{
+  .faq-section-right {
     padding: 0px 20px !important;
     text-align: center !important;
   }
 
-  .accordion-section-content{
+  .accordion-section-content {
     text-align: left !important;
   }
 
@@ -907,11 +992,12 @@ body{
   .footer-reachout-text {
     font-size: 18px !important;
   }
-  .footer-separator{
+
+  .footer-separator {
     margin: 1px;
   }
 
-  .footer-copyright{
+  .footer-copyright {
     margin: 0px;
     text-align: center;
     font-size: 12px !important;
@@ -923,28 +1009,33 @@ body{
     padding-top: 0rem !important;
   }
 
-  .loan-process-section-paragraph{
+  .loan-process-section-paragraph {
     text-align: center !important;
     padding-right: 0 !important;
   }
 
-  .bar-container{
+  .bar-container {
     display: none;
   }
 
-  .step-number{
+  .step-number {
     margin-left: 2px;
+  }
+
+  .loan-calculator-box{
+    width: auto !important;
+    /*margin-left:1rem !important;*/
   }
 
 }
 
-@media (max-width: 768px){
-  .image-gallery{
+@media (max-width: 768px) {
+  .image-gallery {
     display: block;
     text-align: center;
   }
 
-  .footer{
+  .footer {
     background: #FFFFFF !important;
     height: auto !important;
     display: block !important;

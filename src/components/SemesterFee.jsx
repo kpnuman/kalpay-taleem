@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import books from '../../public/images/books.png';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import kicksoft from '../../public/images/kicksoft.png';
 import lums from '../../public/images/lums.png';
 import lums2 from '../../public/images/lums-2.png';
@@ -8,8 +9,10 @@ import rs from '../../public/images/rs.png';
 import mapped from '../../public/images/mapped.png';
 import dversity from '../../public/images/dversity.png';
 import logo from '../../public/images/logo.png';
-
-function SemesterFee(){
+import MySlider from './common/RangeSlider';
+const data = [25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
+const secondSliderData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+function SemesterFee() {
     return (
         <>
             <div className="container-fluid hero-section-semester-fee pt-5">
@@ -18,7 +21,7 @@ function SemesterFee(){
                         {/* Left Column */}
                         <div className="d-flex flex-row justify-content-center align-items-start">
                             <h1 className="hero-section-semester-fee-heading">Learn Now
-                            <span style={{color:"#20282B"}}> Pay Later </span></h1>
+                                <span style={{ color: "#20282B" }}> Pay Later </span></h1>
                             {/*<h1 className="hero-section-pay-later-heading">Pay Later</h1>*/}
                         </div>
                         <div className="d-flex flex-column">
@@ -52,7 +55,7 @@ function SemesterFee(){
             <div className="row loan-process-section pt-5 mb-5">
                 <div className="col-md-5 pt-5 justify-content-center d-flex flex-column loan-process-left-section">
                     <h3 className="loan-process-section-heading pt-5">Educational Inclusion
-                        <span style={{color:'#FFD844'}}> for Everyone! </span> </h3>
+                        <span style={{ color: '#FFD844' }}> for Everyone! </span> </h3>
                     <p className="loan-process-section-paragraph">Providing educational instalments for various local and international institutions</p>
                 </div>
                 <div className="col-md-7 d-flex flex-column">
@@ -101,35 +104,31 @@ function SemesterFee(){
                     <p className="loan-process-section-headline">For more details about the process click here</p>
                 </div>
             </div>
-            {/*<div className="d-flex justify-content-center flex-column align-items-center mb-5">*/}
-            {/*    <h3 className="loan-calculator-heading"> Loan Calculator </h3>*/}
-            {/*    <div className="loan-calculator-box">*/}
-            {/*        <div className="text-center pt-5">*/}
-            {/*            <img src={logo} />*/}
-            {/*        </div>*/}
-            {/*        <div>*/}
-            {/*            <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>*/}
-            {/*            <input className="text-start price-input" type="text" placeholder="Price *" required={true} />*/}
-            {/*        </div>*/}
-            {/*        /!*<MySlider />*!/*/}
-            {/*        /!*<div className="slider">*!/*/}
-            {/*        /!*    <input type="range" min="25" max="70" value="25" id="fader" step="5" list="volsettings" />*!/*/}
-            {/*        /!*    <datalist id="volsettings">*!/*/}
-            {/*        /!*        <option>25</option>*!/*/}
-            {/*        /!*        <option>30</option>*!/*/}
-            {/*        /!*        <option>35</option>*!/*/}
-            {/*        /!*        <option>40</option>*!/*/}
-            {/*        /!*        <option>45</option>*!/*/}
-            {/*        /!*        <option>50</option>*!/*/}
-            {/*        /!*        <option>55</option>*!/*/}
-            {/*        /!*        <option>60</option>*!/*/}
-            {/*        /!*        <option>65</option>*!/*/}
-            {/*        /!*        <option>70</option>*!/*/}
-            {/*        /!*    </datalist>*!/*/}
-            {/*        /!*</div>*!/*/}
-
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className="d-flex justify-content-center flex-column align-items-center mb-5">
+                <h3 className="loan-calculator-heading mb-5"> Loan Calculator </h3>
+                <div className="loan-calculator-box">
+                    <div className="text-center pt-5">
+                        <img src={logo} />
+                    </div>
+                    <div>
+                        <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>
+                        <input className="text-start price-input" type="text" placeholder="Price *" required={true} />
+                    </div>
+                    <div className="mb-3">
+                        <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>
+                        <MySlider data={data} step={5} min={25} max={70} />
+                    </div>
+                    <div>
+                        <p style={{paddingLeft:'3rem'}}> Total number of Instalments</p>
+                        <MySlider data={secondSliderData} step={1} min={1} max={12} />
+                    </div>
+                    <div className="d-flex justify-content-center align-items-center mt-4">
+                        <button className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>
+                                Calculate
+                        </button>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
@@ -153,54 +152,6 @@ function Gallery() {
                     <img src={image} alt={`Partner ${index + 1}`} />
                 </div>
             ))}
-        </div>
-    );
-}
-
-function MySlider() {
-    const [sliderValue, setSliderValue] = useState(25);
-
-    const handleSliderChange = (event) => {
-        setSliderValue(event.target.value);
-    };
-
-    return (
-        <div className="slider-container">
-            <input
-                type="range"
-                min="25"
-                max="70"
-                value={sliderValue}
-                id="fader"
-                step="5"
-                list="volsettings"
-                onChange={handleSliderChange}
-                className="custom-slider"
-            />
-            <datalist id="volsettings">
-                <option value="25">25</option>
-                <option value="30">30</option>
-                <option value="35">35</option>
-                <option value="40">40</option>
-                <option value="45">45</option>
-                <option value="50">50</option>
-                <option value="55">55</option>
-                <option value="60">60</option>
-                <option value="65">65</option>
-                <option value="70">70</option>
-            </datalist>
-            <div className="breakpoint-labels">
-                <span>25</span>
-                <span>30</span>
-                <span>35</span>
-                <span>40</span>
-                <span>45</span>
-                <span>50</span>
-                <span>55</span>
-                <span>60</span>
-                <span>65</span>
-                <span>70</span>
-            </div>
         </div>
     );
 }
