@@ -11,6 +11,8 @@ import Home from './components/Home.jsx';
 import SemesterFee from './components/SemesterFee.jsx'; // Import the About Us component
 import './App.css';
 import Footer from './components/Footer.jsx';
+import AdmissionTests from './components/AdmissionTests.jsx';
+import ProfessionalExam from './components/ProfessionalExam.jsx';
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/semester-fee" element={<SemesterFee />} />
+                <Route path="/admission-tests" element={<AdmissionTests />} />
+                <Route path="/professional-exams" element={<ProfessionalExam />} />
             </Routes>
             <Footer />
         </BrowserRouter>

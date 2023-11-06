@@ -1,32 +1,30 @@
 /* eslint-disable no-unused-vars */
-import books from '../../public/images/books.png';
-import kicksoft from '../../public/images/kicksoft.png';
-import lums from '../../public/images/lums.png';
-import lums2 from '../../public/images/lums-2.png';
-import smart from '../../public/images/smart.png';
-import rs from '../../public/images/rs.png';
-import mapped from '../../public/images/mapped.png';
-import dversity from '../../public/images/dversity.png';
+import admissionTest from '../../public/images/admission-test-banner.png';
+import gmat from '../../public/images/gmat.png';
+import gre from '../../public/images/gre.png';
+import ielts from '../../public/images/ielts.png';
+import sat from '../../public/images/sat.png';
+import pte from '../../public/images/pte.png';
 import logo from '../../public/images/logo.png';
 import MySlider from './common/RangeSlider';
+import whyTaleem from '../../public/images/why-taleem.png';
+import arrowIcon from '../../public/images/arrow-Icon.png';
+import clockIcon from '../../public/images/clock-Icon.png';
+import React from 'react';
 const data = [25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
 const secondSliderData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-function SemesterFee() {
+function AdmissionTests() {
     return (
         <>
             <div className="container-fluid hero-section-semester-fee pt-5">
                 <div className="row">
                     <div className="col-md-6 hero-section-left">
                         {/* Left Column */}
-                        <div className="d-flex flex-row justify-content-center align-items-start">
-                            <h1 className="hero-section-semester-fee-heading">Learn Now
-                                <span style={{ color: "#20282B" }}> Pay Later </span></h1>
-                            {/*<h1 className="hero-section-pay-later-heading">Pay Later</h1>*/}
-                        </div>
-                        <div className="d-flex flex-column">
-                            <h4 className="hero-section-semester-fee-text">KalPay Taleem is Pakistan’s first Shariah-aligned Learn Now Pay Later service enabling hassle-free access to education for everyone!</h4>
+                        <div className="d-flex flex-column pt-5">
+                            <h4 className="hero-section-semester-fee-text">Dreaming of studying abroad but struggling to come up with the funds to cover the admission test fees?</h4>
                             <p className="hero-section-para">
-                                In collaboration with Taleem Finance Company Ltd., KalPay is providing students the facility to pay for their educational expenses in easy monthly installments, making education accessible and more affordable.
+                                Just focus on your preparation and use KalPay to split your exam fees into equal monthly installments. The facility covers a wide array of admission tests including but not limited to
+                                <strong> GMAT, GRE, IELTS, Pearson PTE, SAT </strong> and more.
                             </p>
                             <button className="btn">
                                 <a href="#" className="btn-text">
@@ -39,19 +37,55 @@ function SemesterFee() {
                     <div className="col-md-6">
                         {/* Right Column */}
                         <div className="d-flex justify-content-center align-items-center hero-img">
-                            <img src={books} alt="Your Image" className="img-fluid" />
+                            <img src={admissionTest} alt="Your Image" className="img-fluid" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="row justify-content-center loan-process-section pt-5">
-                <h3 className="continously-expanding-heading pt-5 pb-5"> Continuously Expanding Our Reach…….</h3>
+            <div className="row justify-content-center bg-white pt-5">
+                {/*<h3 className="continously-expanding-heading pt-5 pb-5"> Continuously Expanding Our Reach…….</h3>*/}
                 <div className="row justify-content-center gap-2">
-                    <Gallery />
                     <Gallery />
                 </div>
             </div>
-            <div className="row loan-process-section pt-5 mb-5">
+            <div className='row d-lg-flex bg-white'>
+                <div className='col-12 col-lg-6 why-image'>
+                    <img src={whyTaleem} alt="Your Image" className="img-fluid"/>
+                </div>
+                <div className='col-12 col-lg-6 why-section d-sm-flex-column'>
+                    <h2 className={'why-choose'}>Why Choose</h2>
+                    <h2 className={'why-taleem-admission'}>KalPay to Finance Your Admission Test Fee?</h2>
+                    <div className='d-lg-flex why-taleem-content mb-4'>
+                        <div className='why-section-icon'>
+                            <img src={arrowIcon} alt="Your Image" className="" />
+                        </div>
+                        <div className={'why-heading-text'}>
+                            <h4 className={'why-section-heading'}>No exchange rate fluctuations</h4>
+                            <p className={'why-section-paragraph'}>You don't have to worry about the exchange rate fluctuation as the instalment plan will be fixed in PKR based on the day the fee payment is made.</p>
+                        </div>
+                    </div>
+                    <div className='d-lg-flex why-taleem-content mb-2'>
+                        <div className='why-section-icon'>
+                            <img src={clockIcon} alt="Your Image" className="" />
+                        </div>
+                        <div className={'why-heading-text'}>
+                            <h4 className={'why-section-heading'}>Quick Processing</h4>
+                            <p className={'why-section-paragraph'}>We take no more than 3 business days to process all applications!</p>
+                        </div>
+                    </div>
+                    <div className='d-lg-flex why-taleem-content mb-5'>
+                        <div className='why-section-icon'>
+                            <img src={arrowIcon} alt="Your Image" className="" />
+                        </div>
+                        <div className={'why-heading-text'}>
+                            <h4 className={'why-section-heading'}>Customizable Plans</h4>
+                            <p className={'why-section-paragraph'}>Pick and choose however you’d like to pay back.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="row loan-process-section-admission pt-5 mb-5">
                 <div className="col-md-5 pt-5 justify-content-center d-flex flex-column loan-process-left-section">
                     <h3 className="loan-process-section-heading pt-5">Educational Inclusion
                         <span style={{ color: '#FFD844' }}> for Everyone! </span> </h3>
@@ -123,7 +157,7 @@ function SemesterFee() {
                     </div>
                     <div className="d-flex justify-content-center align-items-center mt-4">
                         <button className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>
-                                Calculate
+                            Calculate
                         </button>
                     </div>
                 </div>
@@ -134,18 +168,16 @@ function SemesterFee() {
 function Gallery() {
     // Replace these image URLs with your partner images
     const partnerImages = [
-        kicksoft,
-        lums,
-        lums2,
-        smart,
-        rs,
-        mapped,
-        dversity
+        gmat,
+        gre,
+        ielts,
+        sat,
+        pte
         // Add more image URLs as needed
-    ];
+    ].reverse();
 
     return (
-        <div className="image-gallery">
+        <div className="image-gallery gap-3">
             {partnerImages.map((image, index) => (
                 <div key={index} className="image-gallery-item">
                     <img src={image} alt={`Partner ${index + 1}`} />
@@ -154,4 +186,4 @@ function Gallery() {
         </div>
     );
 }
-export default SemesterFee;
+export default AdmissionTests;

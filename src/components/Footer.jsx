@@ -1,5 +1,6 @@
 import React from 'react';
 import footerLogo from '../../public/images/footer-logo.png'
+import { Link } from 'react-router-dom';
 function Footer(){
     return(
         <>
@@ -11,7 +12,9 @@ function Footer(){
             </div>
             <div className="row mb-5 footer d-flex">
                 <div className="col-lg-4 col-12 d-flex flex-column gap-1 justify-content-center mx-lg-5 px-4 mt-2">
-                    <img src={footerLogo} className="mb-4" width={150}/>
+                    <Link to={'/'}>
+                        <img src={footerLogo} className="mb-4" width={150}/>
+                    </Link>
                     <h4 className="footer-heading">Consumer financing made easy!</h4>
                     <p className="footer-paragraph">Study Now Pay Later in easy, interest-free installments with KalPay!</p>
                 </div>
@@ -19,9 +22,9 @@ function Footer(){
                     <div className="d-flex flex-column justify-content-center">
                         <h2 className="footer-menu-heading"> Product</h2>
                         <div className="footer-menu mt-2 d-flex flex-column">
-                            <a> Semester Fees </a>
-                            <a> Admission Tests </a>
-                            <a> Professional Exams </a>
+                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'/semester-fee'}> Semester Fees </Link>
+                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'/admission-tests'}> Admission Tests </Link>
+                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'/professional-exams'}> Professional Exams </Link>
                         </div>
                     </div>
                 </div>
@@ -39,9 +42,10 @@ function Footer(){
                     <div className="d-flex flex-column justify-content-center">
                         <h2 className="footer-menu-heading"> Social Media</h2>
                         <div className="footer-menu mt-2 d-flex flex-column">
-                            <a> Facebook </a>
-                            <a> Instagram </a>
-                            <a> LinkedIn </a>
+                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'https://www.facebook.com/kalpayfinancials'}> Facebook </Link>
+                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'https://instagram.com/kal.pay'}> Instagram </Link>
+                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'https://instagram.com/kal.pay'}> LinkedIn </Link>
+
                         </div>
                     </div>
                 </div>
@@ -52,7 +56,11 @@ function Footer(){
                     <p className="footer-copyright">KalPay © 2023/ All Rights Reserved</p>
                 </div>
                 <div className="col-lg-6 col-12 d-lg-flex justify-content-lg-end">
-                    <p className="footer-copyright">Powered by KalTech</p>
+                    <p className="footer-copyright">
+                        <a href="https://kaltech.online/" target={"_blank"} style={{textDecoration: 'none', color:'#20282B'}}>
+                        Powered by KalTech
+                        </a>
+                    </p>
                 </div>
             </div>
         </>

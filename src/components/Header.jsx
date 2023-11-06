@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from '../../public/images/logo.png';
+import { Link } from 'react-router-dom';
 function Header() {
     return (
         <div className="container">
             <nav className="navbar navbar-expand-md navbar-custom">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to={'/'}>
                     <img src={logo} width="133" height="68" alt="Logo" />
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -18,24 +19,24 @@ function Header() {
                 <div className="collapse navbar-collapse menu" id="navbarNav">
                     <ul className="navbar-nav ml-auto justify-content-end">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to={'/'}>
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to={'/semester-fee'}>
                                 Semester Fee
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to={'/admission-tests'}>
                                 Admission Tests
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to={'/professional-exams'}>
                                 Professional Exams
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">

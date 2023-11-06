@@ -20,8 +20,9 @@ function MySlider({ data, step, min, max }) {
                 step={step}
                 min={min}
                 max={max}
-                className="mx-5 w-75 w-sm-50 range-slider mx-xs-0"
+                className="calculator-spacing w-75 w-sm-50 range-slider mx-xs-0"
                 onChange={handleChange} // Handle slider value change
+                variant={"danger"}
             />
             <div className="breakpoint-labels" style={{ width: '78%', marginLeft: '2.7rem' }}>
                 {data?.map((value) => (

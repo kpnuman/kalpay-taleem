@@ -14,7 +14,7 @@ body {
   /*border-bottom: 1px solid #e5e5e5; !* Add a bottom border for separation *!*/
   font-family: 'Poppins', sans-serif;
   /* Use the specified font-family */
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .navbar-custom .navbar-brand {
@@ -641,7 +641,7 @@ body {
 }
 
 .hero-section-semester-fee {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   height: auto !important;
   /*width: auto !important;*/
   background: #FFD844;
@@ -920,6 +920,31 @@ body {
   background: #bc263a;
 }
 
+.calculator-spacing{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.admission-test-choose{
+  background: linear-gradient(90deg, #F0F0F0 0%, rgba(248, 248, 248, 0) 100%);
+}
+
+.loan-process-section-admission {
+  background: linear-gradient(2deg, #F0F0F0 0%, rgba(248, 248, 248, 0) 100%);
+  height: auto !important;
+}
+
+.why-taleem-admission{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  padding-right: 6rem;
+  color: #20282B;
+}
+
 @media (min-width: 100px) and (max-width: 979px) {
   .navbar-custom {
     margin-left: 0 !important;
@@ -1012,6 +1037,7 @@ body {
   .loan-process-section-paragraph {
     text-align: center !important;
     padding-right: 0 !important;
+    padding-left: 20px !important;
   }
 
   .bar-container {
@@ -1022,11 +1048,24 @@ body {
     margin-left: 2px;
   }
 
-  .loan-calculator-box{
+  .loan-calculator-box {
     width: auto !important;
     /*margin-left:1rem !important;*/
   }
 
+  .calculator-spacing {
+    margin-right: 0 !important;
+  }
+
+  .loan-process-heading {
+    padding-left: 0rem !important;
+    text-align: center !important;
+  }
+
+  .why-taleem-admission {
+    font-size: 35px !important;
+    padding: 0 !important;
+  }
 }
 
 @media (max-width: 768px) {
