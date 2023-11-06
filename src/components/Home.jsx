@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import heroImage from '../../public/images/hero-image.png'
 import paymentIcon from '../../public/images/icon-payment.png'
 import admissionIcon from '../../public/images/Icon-admission.png'
@@ -12,8 +12,9 @@ import mapped from '../../public/images/mapped.png'
 import dversity from '../../public/images/dversity.png'
 import whyTaleem from '../../public/images/why-taleem.png'
 import mosque from '../../public/images/mosque.png'
+import clock from '../../public/images/clock-Icon.png'
+import exam from '../../public/images/examIcon.png'
 import faq from '../../public/images/faq.png'
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 function HomePage() {
@@ -110,7 +111,7 @@ function HomePage() {
                     </div>
                     <div className='d-lg-flex why-taleem-content'>
                         <div className='why-section-icon'>
-                            <img src={mosque} alt="Your Image" className="" />
+                            <img src={clock} alt="Your Image" className="" />
                         </div>
                         <div className={'why-heading-text'}>
                             <h4 className={'why-section-heading'}>Easy & Quick Processing</h4>
@@ -119,7 +120,7 @@ function HomePage() {
                     </div>
                     <div className='d-lg-flex why-taleem-content'>
                         <div className='why-section-icon'>
-                            <img src={mosque} alt="Your Image" className="" />
+                            <img src={exam} alt="Your Image" className="" />
                         </div>
                         <div className={'why-heading-text'}>
                             <h4 className={'why-section-heading'}>Customizable Plans According to Your Preferences</h4>
@@ -147,7 +148,7 @@ function HomePage() {
             </div>
             <div className="row d-lg-flex faq-section">
                 <div className="col-lg-6 col-sm-12 justify-content-center text-center align-items-center">
-                    <img src={faq} className="faq-section-img justify-content-center align-items-center" />
+                    <img src={faq} className="faq-section-img justify-content-center align-items-center" alt={'faq-image'} />
                 </div>
                 <div className="col-lg-6 col-sm-12 faq-section-right">
                     <h4 className="faq-section-heading"> FAQs</h4>
@@ -223,36 +224,6 @@ function Gallery() {
                 </div>
             ))}
         </div>
-    );
-}
-
-function ImageGallery() {
-    const partnerImages = [
-        kicksoft,
-        lums,
-        lums2,
-        smart,
-        rs,
-        mapped,
-        dversity
-        // Add more image URLs as needed
-    ];
-
-    const settings = {
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: true,
-    };
-
-    return (
-        <Slider {...settings}>
-            {partnerImages.map((image, index) => (
-                <div key={index}>
-                    <img src={image} alt={`Partner ${index + 1}`} />
-                </div>
-            ))}
-        </Slider>
     );
 }
 
