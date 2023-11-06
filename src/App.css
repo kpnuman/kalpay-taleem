@@ -171,7 +171,7 @@ body {
 .box-paragraph {
   /* Add styles for the paragraph here */
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 23px;
   /* or 144% */
   text-align: center;
@@ -203,7 +203,7 @@ body {
 .box-paragraph-2 {
   /* Add styles for the paragraph here */
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 23px;
   /* or 144% */
   text-align: center;
@@ -764,6 +764,7 @@ body {
   padding-top: 20px;
   color: #5C5C5C;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .bar-container {
@@ -873,6 +874,7 @@ body {
 .breakpoint-labels {
   display: flex;
   justify-content: space-between;
+  gap: 1.3rem;
   /*margin-top: 10px;*/
 }
 
@@ -881,39 +883,17 @@ body {
   text-align: center;
 }
 
-
-/* WebKit (Chrome, Safari) */
-.range-slider input[type="range"]::-webkit-slider-runnable-track {
-  background: linear-gradient(to right, green 0%, green 50%, red 50%, red 100%) !important;
+.instalment-breakpoint-labels {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.3rem;
+  /*margin-top: 10px;*/
 }
 
-/* Firefox */
-.range-slider input[type="range"]::-moz-range-track {
-  background: linear-gradient(to right, green 0%, green 50%, red 50%, red 100%) !important;
+.instalment-breakpoint-labels span {
+  flex: 1;
+  text-align: center;
 }
-
-.range-slider input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 10px;
-  background-color: red !important; /* Background color of the slider track */
-  border: none;
-  border-radius: 5px;
-  outline: none;
-}
-
-.range-slider input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: green !important; /* Color for the slider thumb */
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 
 .btn:hover {
   text-decoration: none;
@@ -922,7 +902,11 @@ body {
 
 .calculator-spacing{
   margin-left: 3rem;
-  margin-right: 3rem;
+  /*margin-right: 3rem;*/
+}
+
+.css-1v5z18m{
+  width: 350px !important;
 }
 
 .admission-test-choose{
@@ -943,6 +927,18 @@ body {
   font-feature-settings: 'pnum' on, 'lnum' on;
   padding-right: 6rem;
   color: #20282B;
+}
+
+.css-1gv0vcd-MuiSlider-track {
+  color: #bc263a !important;
+}
+
+.css-frv3qg-MuiSlider-thumb{
+  color: #bc263a !important;
+}
+
+.css-14pt78w-MuiSlider-rail{
+  color: #e5acb4 !important;
 }
 
 @media (min-width: 100px) and (max-width: 979px) {
@@ -1078,5 +1074,31 @@ body {
     background: #FFFFFF !important;
     height: auto !important;
     display: block !important;
+  }
+}
+
+@media(max-width: 400px) {
+  .css-1v5z18m{
+    width: 300px !important;
+  }
+
+  .breakpoint-labels {
+    gap: 14px !important;
+  }
+  .instalment-breakpoint-labels {
+    gap: 14px !important;
+  }
+}
+@media(max-width: 350px) {
+  .css-1v5z18m{
+    width: 230px !important;
+  }
+
+  .breakpoint-labels {
+    gap: 7px !important;
+  }
+
+  .instalment-breakpoint-labels{
+    gap: 10px !important;
   }
 }

@@ -22,7 +22,9 @@ function MySlider({ data, step, min, max }) {
                 max={max}
                 className="calculator-spacing w-75 w-sm-50 range-slider mx-xs-0"
                 onChange={handleChange} // Handle slider value change
-                variant={"danger"}
+                style={{
+                    '--slider-thumb-color': 'green', // Change this to the desired color
+                }}
             />
             <div className="breakpoint-labels" style={{ width: '78%', marginLeft: '2.7rem' }}>
                 {data?.map((value) => (

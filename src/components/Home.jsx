@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import heroImage from '../../public/images/hero-image.png'
 import paymentIcon from '../../public/images/icon-payment.png'
 import admissionIcon from '../../public/images/Icon-admission.png'
@@ -17,6 +17,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 function HomePage() {
+    useEffect(() => {
+        document.title = "Home"
+    }, []);
+
     return (
         <>
             <div className="container-fluid hero-section">
@@ -162,7 +166,7 @@ function HomePage() {
                             </div>
                             <div className="accordion-item mb-2">
                                 <h2 className="accordion-header" id="headingTwo">
-                                    <button type="button" className="accordion-button accordion-heading" data-bs-toggle="collapse" data-bs-target="#collapseTwo">What services does your Herbvest provide?</button>
+                                    <button type="button" className="accordion-button accordion-heading collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">What services does your Herbvest provide?</button>
                                 </h2>
                                 <div id="collapseTwo" className="accordion-collapse collapse accordion-section-content" data-bs-parent="#myAccordion">
                                     <div className="card-body">
@@ -172,7 +176,7 @@ function HomePage() {
                             </div>
                             <div className="accordion-item mb-2">
                                 <h2 className="accordion-header" id="headingTwo">
-                                    <button type="button" className="accordion-button accordion-heading" data-bs-toggle="collapse" data-bs-target="#collapseThree">What services does your Herbvest provide?</button>
+                                    <button type="button" className="accordion-button accordion-heading collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">What services does your Herbvest provide?</button>
                                 </h2>
                                 <div id="collapseThree" className="accordion-collapse collapse accordion-section-content" data-bs-parent="#myAccordion">
                                     <div className="card-body">
@@ -182,7 +186,7 @@ function HomePage() {
                             </div>
                             <div className="accordion-item mb-2">
                                 <h2 className="accordion-header" id="headingTwo">
-                                    <button type="button" className="accordion-button accordion-heading" data-bs-toggle="collapse" data-bs-target="#collapseFour">What services does your Herbvest provide?</button>
+                                    <button type="button" className="accordion-button accordion-heading collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">What services does your Herbvest provide?</button>
                                 </h2>
                                 <div id="collapseFour" className="accordion-collapse collapse accordion-section-content" data-bs-parent="#myAccordion">
                                     <div className="card-body">

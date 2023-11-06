@@ -9,9 +9,15 @@ import mapped from '../../public/images/mapped.png';
 import dversity from '../../public/images/dversity.png';
 import logo from '../../public/images/logo.png';
 import MySlider from './common/RangeSlider';
+import DiscreteSlider from './common/Calculator.jsx';
+import { useEffect } from 'react';
 const data = [25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
 const secondSliderData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 function SemesterFee() {
+    useEffect(() => {
+        document.title = "Semester Fee"
+    }, []);
+
     return (
         <>
             <div className="container-fluid hero-section-semester-fee pt-5">
@@ -113,13 +119,21 @@ function SemesterFee() {
                         <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>
                         <input className="text-start price-input" type="text" placeholder="Price *" required={true} />
                     </div>
-                    <div className="mb-3">
+                    {/*<div className="mb-3">*/}
+                    {/*    <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>*/}
+                    {/*    <MySlider data={data} step={5} min={25} max={70} />*/}
+                    {/*</div>*/}
+                    {/*<div>*/}
+                    {/*    <p style={{paddingLeft:'3rem'}}> Total number of Instalments</p>*/}
+                    {/*    <MySlider data={secondSliderData} step={1} min={1} max={12} />*/}
+                    {/*</div>*/}
+                    <div>
                         <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>
-                        <MySlider data={data} step={5} min={25} max={70} />
+                        <DiscreteSlider data={data} step={5} min={25} max={70} defaultValue={25}/>
                     </div>
                     <div>
-                        <p style={{paddingLeft:'3rem'}}> Total number of Instalments</p>
-                        <MySlider data={secondSliderData} step={1} min={1} max={12} />
+                        <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Total number of Instalments</p>
+                        <DiscreteSlider data={secondSliderData} step={1} min={1} max={12} defaultValue={1} instalment={true} />
                     </div>
                     <div className="d-flex justify-content-center align-items-center mt-4">
                         <button className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>
