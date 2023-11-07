@@ -1,5 +1,4 @@
-import React from 'react';
-import footerLogo from '../../public/images/footer-logo.png'
+const footerLogo = '/images/footer-logo.png'
 import { Link } from 'react-router-dom';
 function Footer(){
     return(
@@ -13,7 +12,7 @@ function Footer(){
             <div className="row mb-5 footer d-flex">
                 <div className="col-lg-4 col-12 d-flex flex-column gap-1 justify-content-center mx-lg-5 px-4 mt-2">
                     <Link to={'/'}>
-                        <img src={footerLogo} className="mb-4" width={150}/>
+                        <img src={window.location.origin + footerLogo} className="mb-4" width={150}/>
                     </Link>
                     <h4 className="footer-heading">Consumer financing made easy!</h4>
                     <p className="footer-paragraph">Study Now Pay Later in easy, interest-free installments with KalPay!</p>
@@ -32,9 +31,11 @@ function Footer(){
                     <div className="d-flex flex-column justify-content-center">
                         <h2 className="footer-menu-heading"> About</h2>
                         <div className="footer-menu mt-2 d-flex flex-column">
-                            <a> Apply Now </a>
-                            <a> Privacy Policy </a>
-                            <a> We Are KalPay </a>
+                            <a style={{textDecoration: 'none', color:'#20282B'}} rel={"noreferrer"} href={"https://docs.google.com/forms/d/e/1FAIpQLScRu-aQshc3C-W0uhmIoBB4MmLzUOUmAMjZV5JIYDJVhgx_OQ/viewform"} target={"_blank"}>
+                                Apply Now </a>
+                            <a style={{textDecoration: 'none', color:'#20282B'}} rel={"noreferrer"} href={"https://bnpl.kalpayfinancials.com/privacy.html"} target={"_blank"}>
+                            Privacy Policy </a>
+                            <a style={{textDecoration: 'none', color:'#20282B'}} rel={"noreferrer"} href={"https://kalpayfinancials.com"} target={"_blank"}> We Are KalPay </a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +58,7 @@ function Footer(){
                 </div>
                 <div className="col-lg-6 col-12 d-lg-flex justify-content-lg-end">
                     <p className="footer-copyright">
-                        <a href="https://kaltech.online/" target={"_blank"} style={{textDecoration: 'none', color:'#20282B'}}>
+                        <a href="https://kaltech.online/" target={"_blank"} style={{textDecoration: 'none', color:'#20282B'}} rel="noreferrer">
                         Powered by KalTech
                         </a>
                     </p>

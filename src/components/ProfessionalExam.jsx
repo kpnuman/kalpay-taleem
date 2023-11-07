@@ -1,16 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import professionalExam from '../../public/images/professional-exam.png';
-import soa from '../../public/images/soa.png';
-import ca from '../../public/images/ca.png';
-import acca from '../../public/images/acca.png';
-import cfa from '../../public/images/cfa.png';
-import logo from '../../public/images/logo.png';
-import MySlider from './common/RangeSlider';
-import whyTaleem from '../../public/images/why-taleem.png';
-import arrowIcon from '../../public/images/arrow-Icon.png';
-import clockIcon from '../../public/images/clock-Icon.png';
+const professionalExam = '/images/professional-exam.png';
+const soa = '/images/soa.png';
+const ca = '/images/ca.png';
+const acca = '/images/acca.png';
+const cfa = '/images/cfa.png';
+const logo = '/images/logo.png';
+const whyTaleem = '/images/why-taleem.png';
+const arrowIcon = '/images/arrow-Icon.png';
+const clockIcon = '/images/clock-Icon.png';
 import React, { useEffect } from 'react';
 import DiscreteSlider from './common/Calculator.jsx';
+import MySlider from './common/RangeSlider';
 const data = [25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
 const secondSliderData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
@@ -25,7 +26,7 @@ function ProfessionalExam() {
                 <div className="row">
                     <div className="col-md-6 hero-section-left">
                         {/* Left Column */}
-                        <div className="d-flex flex-column pt-5">
+                        <div className="d-flex flex-column pt-5 align-items-lg-start align-items-center">
                             <h4 className="hero-section-semester-fee-text">Are you looking to further your career with a professional certification or accreditation but struggling to come up with the funds to cover the exam fees?</h4>
                             <p className="hero-section-para">
                                 Our finance options allow you to spread the cost of your professional exam fees over a series of easy installments,
@@ -34,7 +35,7 @@ function ProfessionalExam() {
                                 including <strong> ACCA, CA, CFA, Actuary Exams </strong> and many others.
                             </p>
                             <button className="btn">
-                                <a href="#" className="btn-text">
+                                <a target={"_blank"} rel={"noreferrer"} href={"https://docs.google.com/forms/d/e/1FAIpQLScRu-aQshc3C-W0uhmIoBB4MmLzUOUmAMjZV5JIYDJVhgx_OQ/viewform"} className="btn-text">
                                     Apply Now
                                 </a>
                             </button>
@@ -44,7 +45,7 @@ function ProfessionalExam() {
                     <div className="col-md-6">
                         {/* Right Column */}
                         <div className="d-flex justify-content-center align-items-center hero-img">
-                            <img src={professionalExam} alt="Your Image" className="img-fluid" />
+                            <img src={window.location.origin + professionalExam} alt="Your Image" className="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -57,14 +58,14 @@ function ProfessionalExam() {
             </div>
             <div className='row d-lg-flex bg-white'>
                 <div className='col-12 col-lg-6 why-image'>
-                    <img src={whyTaleem} alt="Your Image" className="img-fluid"/>
+                    <img src={window.location.origin + whyTaleem} alt="Your Image" className="img-fluid"/>
                 </div>
                 <div className='col-12 col-lg-6 why-section d-sm-flex-column'>
                     <h2 className={'why-choose'}>Why Choose</h2>
                     <h2 className={'why-taleem-admission'}>KalPay to Finance Your Admission Test Fee?</h2>
                     <div className='d-lg-flex why-taleem-content mb-4'>
                         <div className='why-section-icon'>
-                            <img src={arrowIcon} alt="Your Image" className="" />
+                            <img src={window.location.origin + arrowIcon} alt="Your Image" className="" />
                         </div>
                         <div className={'why-heading-text'}>
                             <h4 className={'why-section-heading'}>No exchange rate fluctuations</h4>
@@ -73,7 +74,7 @@ function ProfessionalExam() {
                     </div>
                     <div className='d-lg-flex why-taleem-content mb-2'>
                         <div className='why-section-icon'>
-                            <img src={clockIcon} alt="Your Image" className="" />
+                            <img src={window.location.origin + clockIcon} alt="Your Image" className="" />
                         </div>
                         <div className={'why-heading-text'}>
                             <h4 className={'why-section-heading'}>Quick Processing</h4>
@@ -82,7 +83,7 @@ function ProfessionalExam() {
                     </div>
                     <div className='d-lg-flex why-taleem-content mb-5'>
                         <div className='why-section-icon'>
-                            <img src={arrowIcon} alt="Your Image" className="" />
+                            <img src={window.location.origin + arrowIcon} alt="Your Image" className="" />
                         </div>
                         <div className={'why-heading-text'}>
                             <h4 className={'why-section-heading'}>Customizable Plans</h4>
@@ -148,12 +149,12 @@ function ProfessionalExam() {
                 <h3 className="loan-calculator-heading mb-5"> Loan Calculator </h3>
                 <div className="loan-calculator-box">
                     <div className="text-center pt-5">
-                        <img src={logo} />
+                        <img src={window.location.origin + logo} />
                     </div>
-                    <div>
-                        <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>
-                        <input className="text-start price-input" type="text" placeholder="Price *" required={true} />
-                    </div>
+                    {/*<div>*/}
+                    {/*    <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>*/}
+                    {/*    <input className="text-start price-input" type="text" placeholder="Price *" required={true} />*/}
+                    {/*</div>*/}
                     {/*<div className="mb-3">*/}
                     {/*    <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>*/}
                     {/*    <MySlider data={data} step={5} min={25} max={70} />*/}
@@ -163,18 +164,21 @@ function ProfessionalExam() {
                     {/*    <MySlider data={secondSliderData} step={1} min={1} max={12} />*/}
                     {/*</div>*/}
                     <div>
-                        <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>
-                        <DiscreteSlider data={data} step={5} min={25} max={70} defaultValue={25}/>
+                        <DiscreteSlider />
                     </div>
-                    <div>
-                        <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Total number of Instalments</p>
-                        <DiscreteSlider data={secondSliderData} step={1} min={1} max={12} defaultValue={1} instalment={true} />
-                    </div>
-                    <div className="d-flex justify-content-center align-items-center mt-4">
-                        <button className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>
-                            Calculate
-                        </button>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>*/}
+                    {/*    <DiscreteSlider data={data} step={5} min={25} max={70} defaultValue={25}/>*/}
+                    {/*</div>*/}
+                    {/*<div>*/}
+                    {/*    <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Total number of Instalments</p>*/}
+                    {/*    <DiscreteSlider data={secondSliderData} step={1} min={1} max={12} defaultValue={1} instalment={true} />*/}
+                    {/*</div>*/}
+                    {/*<div className="d-flex justify-content-center align-items-center mt-4">*/}
+                    {/*    <button className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>*/}
+                    {/*        Calculate*/}
+                    {/*    </button>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </>
@@ -194,7 +198,7 @@ function Gallery() {
         <div className="image-gallery gap-3">
             {partnerImages.map((image, index) => (
                 <div key={index} className="image-gallery-item">
-                    <img src={image} alt={`Partner ${index + 1}`} />
+                    <img src={window.location.origin + image} alt={`Partner ${index + 1}`} />
                 </div>
             ))}
         </div>

@@ -1,12 +1,11 @@
-import React from 'react';
-import logo from '../../public/images/logo.png';
+const logo = '/images/logo.png';
 import { Link } from 'react-router-dom';
 function Header() {
     return (
         <div className="container">
             <nav className="navbar navbar-expand-md navbar-custom">
                 <Link className="navbar-brand" to={'/'}>
-                    <img src={logo} width="133" height="68" alt="Logo" />
+                    <img src={window.location.origin + logo} width="133" height="68" alt="Logo" />
                 </Link>
                 <button
                     className="navbar-toggler"
@@ -39,7 +38,8 @@ function Header() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScRu-aQshc3C-W0uhmIoBB4MmLzUOUmAMjZV5JIYDJVhgx_OQ/viewform"
+                            target={"_blank"} rel={"noreferrer"}>
                                 Apply Now
                             </a>
                         </li>

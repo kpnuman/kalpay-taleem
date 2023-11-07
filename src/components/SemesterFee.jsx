@@ -1,16 +1,16 @@
 /* eslint-disable no-unused-vars */
-import books from '../../public/images/books.png';
-import kicksoft from '../../public/images/kicksoft.png';
-import lums from '../../public/images/lums.png';
-import lums2 from '../../public/images/lums-2.png';
-import smart from '../../public/images/smart.png';
-import rs from '../../public/images/rs.png';
-import mapped from '../../public/images/mapped.png';
-import dversity from '../../public/images/dversity.png';
-import logo from '../../public/images/logo.png';
+const books = '/images/books.png';
+const kicksoft = '/images/kicksoft.png';
+const lums = '/images/lums.png';
+const lums2 = '/images/lums-2.png';
+const smart = '/images/smart.png';
+const rs = '/images/rs.png';
+const mapped = '/images/mapped.png';
+const dversity = '/images/dversity.png';
+const logo = '/images/logo.png';
 import MySlider from './common/RangeSlider';
 import DiscreteSlider from './common/Calculator.jsx';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 const data = [25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
 const secondSliderData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 function SemesterFee() {
@@ -24,18 +24,18 @@ function SemesterFee() {
                 <div className="row">
                     <div className="col-md-6 hero-section-left">
                         {/* Left Column */}
-                        <div className="d-flex flex-row justify-content-center align-items-start">
+                        <div className="d-flex flex-row justify-content-center  align-items-center align-items-lg-start">
                             <h1 className="hero-section-semester-fee-heading">Learn Now
                                 <span style={{ color: "#20282B" }}> Pay Later </span></h1>
                             {/*<h1 className="hero-section-pay-later-heading">Pay Later</h1>*/}
                         </div>
-                        <div className="d-flex flex-column">
+                        <div className="d-flex flex-column align-items-lg-start align-items-center">
                             <h4 className="hero-section-semester-fee-text">KalPay Taleem is Pakistan’s first Shariah-aligned Learn Now Pay Later service enabling hassle-free access to education for everyone!</h4>
                             <p className="hero-section-para">
                                 In collaboration with Taleem Finance Company Ltd., KalPay is providing students the facility to pay for their educational expenses in easy monthly installments, making education accessible and more affordable.
                             </p>
                             <button className="btn">
-                                <a href="#" className="btn-text">
+                                <a target={"_blank"} rel={"noreferrer"} href={"https://docs.google.com/forms/d/e/1FAIpQLScRu-aQshc3C-W0uhmIoBB4MmLzUOUmAMjZV5JIYDJVhgx_OQ/viewform"} className="btn-text">
                                     Apply Now
                                 </a>
                             </button>
@@ -45,7 +45,7 @@ function SemesterFee() {
                     <div className="col-md-6">
                         {/* Right Column */}
                         <div className="d-flex justify-content-center align-items-center hero-img">
-                            <img src={books} alt="Your Image" className="img-fluid" />
+                            <img src={window.location.origin + books} alt="Your Image" className="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -113,12 +113,12 @@ function SemesterFee() {
                 <h3 className="loan-calculator-heading mb-5"> Loan Calculator </h3>
                 <div className="loan-calculator-box">
                     <div className="text-center pt-5">
-                        <img src={logo} />
+                        <img src={window.location.origin + logo} />
                     </div>
-                    <div>
-                        <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>
-                        <input className="text-start price-input" type="text" placeholder="Price *" required={true} />
-                    </div>
+                    {/*<div>*/}
+                    {/*    <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>*/}
+                    {/*    <input className="text-start price-input" type="text" placeholder="Price *" required={true} />*/}
+                    {/*</div>*/}
                     {/*<div className="mb-3">*/}
                     {/*    <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>*/}
                     {/*    <MySlider data={data} step={5} min={25} max={70} />*/}
@@ -128,18 +128,21 @@ function SemesterFee() {
                     {/*    <MySlider data={secondSliderData} step={1} min={1} max={12} />*/}
                     {/*</div>*/}
                     <div>
-                        <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>
-                        <DiscreteSlider data={data} step={5} min={25} max={70} defaultValue={25}/>
+                        <DiscreteSlider />
                     </div>
-                    <div>
-                        <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Total number of Instalments</p>
-                        <DiscreteSlider data={secondSliderData} step={1} min={1} max={12} defaultValue={1} instalment={true} />
-                    </div>
-                    <div className="d-flex justify-content-center align-items-center mt-4">
-                        <button className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>
-                                Calculate
-                        </button>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>*/}
+                    {/*    <DiscreteSlider data={data} step={5} min={25} max={70} defaultValue={25}/>*/}
+                    {/*</div>*/}
+                    {/*<div>*/}
+                    {/*    <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Total number of Instalments</p>*/}
+                    {/*    <DiscreteSlider data={secondSliderData} step={1} min={1} max={12} defaultValue={1} instalment={true} />*/}
+                    {/*</div>*/}
+                    {/*<div className="d-flex justify-content-center align-items-center mt-4">*/}
+                    {/*    <button className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>*/}
+                    {/*            Calculate*/}
+                    {/*    </button>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </>
@@ -162,7 +165,7 @@ function Gallery() {
         <div className="image-gallery">
             {partnerImages.map((image, index) => (
                 <div key={index} className="image-gallery-item">
-                    <img src={image} alt={`Partner ${index + 1}`} />
+                    <img src={window.location.origin + image} alt={`Partner ${index + 1}`} />
                 </div>
             ))}
         </div>
