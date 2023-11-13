@@ -146,7 +146,7 @@ function ProfessionalExam() {
                 </div>
                 <div className="d-flex justify-content-center">
                     <p className="loan-process-section-headline">For more details about the process <span></span>
-                        <a style={{color: '#5C5C5C'}} href={window.location.origin + taleemGuide} target={"_blank"} rel={"noopener noreferrer"}>click here </a></p>
+                        <a style={{color: '#bc263a'}} href={window.location.origin + taleemGuide} target={"_blank"} rel={"noopener noreferrer"}>click here </a></p>
                 </div>
             </div>
             <div className="d-flex justify-content-center flex-column align-items-center mb-5">

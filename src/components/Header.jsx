@@ -26,7 +26,7 @@ function Header() {
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to={'/semester-fee'} activeClassName="active">
-                                Semester Fee
+                                Semester & Course Fee
                             </NavLink>
                         </li>
                         <li className="nav-item">

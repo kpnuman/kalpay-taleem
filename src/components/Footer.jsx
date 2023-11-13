@@ -6,8 +6,8 @@ function Footer(){
             <div className="row d-flex flex-column gap-2 justify-content-center text-center footer-reachout">
                 <h2 className="footer-reachout-heading">Reach out to us!</h2>
                 <p className="footer-reachout-text">
-                    <a href="mailto:taleem@kalpayfinancials.com" className="text-decoration-none text-white"> taleem@kalpayfinancials.com </a>
-                    <a href="tel:+923283044414" className="text-decoration-none text-white"><br/> 0328 3044414 </a></p>
+                    <a href="mailto:taleem@kalpayfinancials.com" className="taleem-email"> taleem@kalpayfinancials.com </a>
+                    <a href="tel:+923283044414" className="taleem-number"><br/> 0328 3044414 </a></p>
             </div>
             <div className="row mb-5 footer d-flex">
                 <div className="col-lg-4 col-12 d-flex flex-column gap-1 justify-content-center mx-lg-5 px-4 mt-2">
@@ -45,7 +45,7 @@ function Footer(){
                         <div className="footer-menu mt-2 d-flex flex-column">
                             <a style={{textDecoration: 'none', color:'#20282B'}} href="https://www.facebook.com/kalpayfinancials" target="_blank" rel="noopener noreferrer">Facebook</a>
                             <a style={{textDecoration: 'none', color:'#20282B'}} href="https://instagram.com/kal.pay" target="_blank" rel="noopener noreferrer">Instagram</a>
-                            <a style={{textDecoration: 'none', color:'#20282B'}} href="https://www.linkedin.com/in/kalpay/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a style={{textDecoration: 'none', color:'#20282B'}} href="https://www.linkedin.com/company/kalpayfinancials/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </div>
                     </div>
                 </div>

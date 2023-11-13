@@ -972,6 +972,25 @@ body {
   background: #ffcdcd !important;
 }
 
+.taleem-email{
+  text-decoration: none !important;
+  color: #FFFFFF;
+}
+
+.taleem-number{
+  text-decoration: none !important;
+  color: #FFFFFF;
+}
+
+.taleem-email:hover{
+  color: black !important;
+}
+
+.taleem-number:hover{
+  color: black !important;
+}
+
+
 @media (min-width: 100px) and (max-width: 979px) {
   .navbar-custom {
     margin-left: 0 !important;

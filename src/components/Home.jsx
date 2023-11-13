@@ -41,7 +41,7 @@ function HomePage() {
                 KalPay Taleem aims to remove barriers and make education
                 financing easier and more accessible for everyone. With KalPay
                 Taleem, you can split your educational expenses in up-to 6
-                interest-free monthly instalments, including examination fees,
+                interest-free monthly instalments, including course fee, examination fees,
                 semester fees, hostel dues, etc.
               </p>
               <button className="btn">
@@ -68,7 +68,7 @@ function HomePage() {
             <h2 className="box-heading">Semester Fee</h2>
             <p className="box-paragraph">
               Breakdown your university semester fee in up to 6 equal monthly
-              instalments
+              instalments.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ function HomePage() {
             <h2 className="box-heading-2">Admission Tests</h2>
             <p className="box-paragraph-2">
               Breakdown your Admission Test fee such as SAT, GRE, GMAT, IELTS,
-              TOEFL or PTE exam in up to 6 equal monthly instalments
+              TOEFL or PTE exam in up to 6 equal monthly instalments.
             </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ function HomePage() {
             <h2 className="box-heading-2">Professional Exams</h2>
             <p className="box-paragraph">
               Breakdown your Professional Exam fee such as ACCA, CFA, CA,
-              Actuary and many other exams in up to 6 equal monthly instalments
+              Actuary and many other exams in up to 6 equal monthly instalments.
             </p>
           </div>
         </div>
@@ -153,7 +153,7 @@ function HomePage() {
                 Customizable Plans According to Your Preferences
               </h4>
               <p className={"why-section-paragraph"}>
-                You can choose the installment plan that suits your needs
+                You can choose the instalment plan that suits your needs
               </p>
             </div>
           </div>

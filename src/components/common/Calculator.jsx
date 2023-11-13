@@ -77,7 +77,7 @@ export default function DiscreteSlider() {
     return (
         <div>
             <div>
-                <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>
+                <p className="pt-5 step-description text-start px-5"> Add your fee amount to know your tentative installment plan</p>
                 <input onChange={(e)=>setPrice(Number(e?.target?.value))} className="text-start price-input" type="number" placeholder="Price *" required={true} />
             </div>
 

@@ -34,7 +34,7 @@ function AdmissionTests() {
                         <div className="d-flex flex-column align-items-lg-start align-items-center">
                             <h4 className="hero-section-semester-fee-text">Dreaming of studying abroad but struggling to come up with the funds to cover the admission test fees?</h4>
                             <p className="hero-section-para">
-                                Just focus on your preparation and use KalPay to split your exam fees into equal monthly instalments. The facility covers a wide array of admission tests including but not limited to
+                                Just focus on your preparation and use KalPay to split your exam fees into 6 equal monthly instalments. The facility covers a wide array of admission tests including but not limited to
                                 <strong> GMAT, GRE, IELTS, Pearson PTE, SAT </strong> and more.
                             </p>
                             <button className="btn">
@@ -146,7 +146,7 @@ function AdmissionTests() {
                 </div>
                 <div className="d-flex justify-content-center">
                     <p className="loan-process-section-headline">For more details about the process <span></span>
-                        <a style={{color: '#5C5C5C'}} href={window.location.origin + taleemGuide} target={"_blank"} rel={"noopener noreferrer"}>click here </a></p>
+                        <a style={{color: '#bc263a'}} href={window.location.origin + taleemGuide} target={"_blank"} rel={"noopener noreferrer"}>click here </a></p>
                 </div>
             </div>
             <div className="d-flex justify-content-center flex-column align-items-center mb-5">
