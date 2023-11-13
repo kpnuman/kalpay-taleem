@@ -1,0 +1,46 @@
+name: Deploy to staging
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # The git diff --name-only origin/main command compares the local and remote repositories and lists the names of the files that are different.
+      - name: Check for latest changes
+        id: check-changes
+        run: |
+          CHANGED_FILES=$(git diff --name-only origin/main)
+          if [[ $CHANGED_FILES != null ]]; then
+              echo "::set-output name=newchanges::true"
+          fi
+
+      - name: AWS CLI set up
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-west-2
+
+      - name: Web app build generation
+        run: |
+          npm install --legacy-peer-devs
+          npm run build
+
+      - name: Clear old Artifacts from S3
+        run: |
+          aws s3 rm s3://taleem.kalpayfinancials.com/ --recursive
+
+      - name: Upload Build Artifacts to S3
+        run: |
+          aws s3 sync dist/ s3://taleem.kalpayfinancials.com/
+
+      - name: Create CloudFront Cache Invalidation
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.PRODUCTION_CLOUDFRONT_ID }} --paths "/*"
