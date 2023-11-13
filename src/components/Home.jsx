@@ -107,7 +107,11 @@ function HomePage() {
           </div>
         </div>
         <div className="row justify-content-center mx-2 mt-5">
-          <Gallery />
+          <div>
+            <div className="px-4">
+              <Gallery />
+            </div>
+          </div>
         </div>
       </div>
       <div className="row bg-white d-lg-flex">
