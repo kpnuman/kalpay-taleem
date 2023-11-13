@@ -26,7 +26,12 @@ function AdmissionTests() {
                 <div className="row">
                     <div className="col-md-6 hero-section-left">
                         {/* Left Column */}
-                        <div className="d-flex flex-column pt-5 align-items-lg-start align-items-center">
+                        <div className="d-flex flex-row justify-content-center  align-items-center align-items-lg-start">
+                            <h1 className="hero-section-semester-fee-heading">Prepare Now
+                                <span style={{ color: "#20282B" }}> Pay Later </span></h1>
+                            {/*<h1 className="hero-section-pay-later-heading">Pay Later</h1>*/}
+                        </div>
+                        <div className="d-flex flex-column align-items-lg-start align-items-center">
                             <h4 className="hero-section-semester-fee-text">Dreaming of studying abroad but struggling to come up with the funds to cover the admission test fees?</h4>
                             <p className="hero-section-para">
                                 Just focus on your preparation and use KalPay to split your exam fees into equal monthly instalments. The facility covers a wide array of admission tests including but not limited to
@@ -150,30 +155,11 @@ function AdmissionTests() {
                     <div className="text-center pt-5">
                         <img src={window.location.origin + logo} alt={'logo'} />
                     </div>
-                    {/*<div>*/}
-                    {/*    <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>*/}
-                    {/*    <input className="text-start price-input" type="text" placeholder="Price *" required={true} />*/}
-                    {/*</div>*/}
-                    {/*<div className="mb-3">*/}
-                    {/*    <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Downpayment %</p>*/}
-                    {/*    <MySlider data={data} step={5} min={25} max={70} />*/}
-                    {/*</div>*/}
-                    {/*<div>*/}
-                    {/*    <p style={{paddingLeft:'3rem'}}> Total number of Instalments</p>*/}
-                    {/*    <MySlider data={secondSliderData} step={1} min={1} max={12} />*/}
-                    {/*</div>*/}
+
                     <div>
                         <DiscreteSlider />
                     </div>
-                    {/*<div>*/}
-                    {/*    <p style={{paddingLeft:'3rem'}} className="pt-3 mt-3"> Total number of Instalments</p>*/}
-                    {/*    <DiscreteSlider data={secondSliderData} step={1} min={1} max={12} defaultValue={1} instalment={true} />*/}
-                    {/*</div>*/}
-                    {/*<div className="d-flex justify-content-center align-items-center mt-4">*/}
-                    {/*    <button className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>*/}
-                    {/*        Calculate*/}
-                    {/*    </button>*/}
-                    {/*</div>*/}
+
                 </div>
             </div>
         </>
