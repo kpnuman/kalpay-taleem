@@ -1017,8 +1017,8 @@ body {
   }
 
     .box {
-    margin-top: 1rem !important;
-    width: 250px !important;
+      margin-left: 10px !important;
+      margin-top: 1rem !important;
   }
 
   .why-section {
