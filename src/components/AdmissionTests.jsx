@@ -26,7 +26,7 @@ function AdmissionTests() {
                 <div className="row">
                     <div className="col-md-6 hero-section-left">
                         {/* Left Column */}
-                        <div className="d-flex flex-row justify-content-center  align-items-center align-items-lg-start">
+                        <div className="d-flex flex-row justify-content-center justify-content-xl-start align-items-center align-items-lg-start">
                             <h1 className="hero-section-semester-fee-heading">Prepare Now
                                 <span style={{ color: "#20282B" }}> Pay Later </span></h1>
                             {/*<h1 className="hero-section-pay-later-heading">Pay Later</h1>*/}
