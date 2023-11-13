@@ -7,6 +7,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 
+// eslint-disable-next-line react/prop-types
 export default function PaymentTable({ data }) {
     const apiResponse = data;
 
@@ -16,7 +17,7 @@ export default function PaymentTable({ data }) {
             value: `Rs. ${apiResponse.data?.getInstallmentCalculationForTaleem?.downPayment.toFixed(2)}`,
         },
         {
-            payment: `Monthly installments x ${apiResponse.data?.getInstallmentCalculationForTaleem?.months}`,
+            payment: `Monthly instalments x ${apiResponse.data?.getInstallmentCalculationForTaleem?.months}`,
             value: `Rs. ${apiResponse.data?.getInstallmentCalculationForTaleem?.monthlyInstallment.toFixed(2)}`,
         },
         {

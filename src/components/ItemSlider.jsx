@@ -42,14 +42,14 @@ const ItemsSlider = ({ title, children }) => {
 
   return (
     <>
-      <Container fluid className="my-3 py-3 ">
+      <Container fluid className="py-3 ">
         <div className="item-slider">
           <div ref={scrl} onScroll={scrollCheck} className="item-container">
             {children}
           </div>
         </div>
       </Container>
-      <div className="d-flex align-items-center justify-content-end gap-3" style={{width: '90%'}}>
+      <div className="d-flex align-items-center justify-content-lg-end justify-content-center gap-3" style={{width: '90%'}}>
         <div
           onClick={() => slide(-100)}
           className={`d-flex justify-content-center align-items-center left-arrow-left ${

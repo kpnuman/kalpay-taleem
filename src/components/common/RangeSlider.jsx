@@ -1,16 +1,15 @@
 import { Form } from 'react-bootstrap';
 import '../../App.css'; // Import your CSS file
 
+// eslint-disable-next-line react/prop-types
 function MySlider({ data, step, min, max }) {
-    const handleChange = (e) => {
-        const value = e.target.value;
+    const handleChange = () => {
+        // const value = e.target.value;
         // You can define a threshold value to determine when the color changes
-        const threshold = 50; // Adjust as needed
+        // const threshold = 50; // Adjust as needed
 
         // Change the background color based on the threshold
-        const backgroundColor = value >= threshold ? 'green' : 'red';
-
-        // Apply the background color to the slider track
+// Apply the background color to the slider track
         // e.target.style.backgroundColor = backgroundColor;
     };
 
@@ -27,6 +26,7 @@ function MySlider({ data, step, min, max }) {
                 }}
             />
             <div className="breakpoint-labels" style={{ width: '78%', marginLeft: '2.7rem' }}>
+                {/* eslint-disable-next-line react/prop-types */}
                 {data?.map((value) => (
                     <span key={value}>{value}</span>
                 ))}

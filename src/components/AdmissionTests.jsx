@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import DenseTable from './common/CalculatorTable.jsx';
-
 const admissionTest = '/images/admission-test-banner.png';
 const gmat = '/images/gmat.png';
 const gre = '/images/gre.png';
@@ -12,11 +10,11 @@ const logo = '/images/logo.png';
 const whyTaleem = '/images/why-taleem.png';
 const arrowIcon = '/images/arrow-Icon.png';
 const clockIcon = '/images/clock-Icon.png';
-import MySlider from './common/RangeSlider';
 import React, { useEffect } from 'react';
 import DiscreteSlider from './common/Calculator.jsx';
-const data = [25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
-const secondSliderData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+const taleemGuide = '/images/taleem-customer-guide.pdf';
+
+
 function AdmissionTests() {
     useEffect(() => {
         document.title = "Admission Tests"
@@ -31,7 +29,7 @@ function AdmissionTests() {
                         <div className="d-flex flex-column pt-5 align-items-lg-start align-items-center">
                             <h4 className="hero-section-semester-fee-text">Dreaming of studying abroad but struggling to come up with the funds to cover the admission test fees?</h4>
                             <p className="hero-section-para">
-                                Just focus on your preparation and use KalPay to split your exam fees into equal monthly installments. The facility covers a wide array of admission tests including but not limited to
+                                Just focus on your preparation and use KalPay to split your exam fees into equal monthly instalments. The facility covers a wide array of admission tests including but not limited to
                                 <strong> GMAT, GRE, IELTS, Pearson PTE, SAT </strong> and more.
                             </p>
                             <button className="btn">
@@ -97,59 +95,60 @@ function AdmissionTests() {
                 <div className="col-md-5 pt-5 justify-content-center d-flex flex-column loan-process-left-section">
                     <h3 className="loan-process-section-heading pt-5">Educational Inclusion
                         <span style={{ color: '#FFD844' }}> for Everyone! </span> </h3>
-                    <p className="loan-process-section-paragraph">Providing educational instalments for various local and international institutions</p>
+                    <p className="loan-process-section-paragraph">Providing educational instalments for various local and international tests.</p>
                 </div>
                 <div className="col-md-7 d-flex flex-column">
                     <h3 className="loan-process-heading mb-5 pt-5">Loan Process</h3>
                     <div className="bar-container">
                         <div className="bar"></div>
                     </div>
-                    <div className="d-flex flex-row mb-2 gap-2 z-1">
+                    <div className="d-flex flex-row mb-4 gap-2 z-1">
                         <div className="step-number">
                             <h4>01</h4>
                         </div>
-                        <div className="step-description">
+                        <div className="step-description pb-3">
                             <h6>Student applies through the website.</h6>
-                            <p>We are leaders in Shariah Aligned Consumer Financing</p>
+                            {/*<p>We are leaders in Shariah Aligned Consumer Financing</p>*/}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-2 gap-2 z-1">
+                    <div className="d-flex flex-row mb-4 gap-2 z-1">
                         <div className="step-number">
                             <h4>02</h4>
                         </div>
-                        <div className="step-description">
+                        <div className="step-description pb-3">
                             <h6>Meeting is set up. Student submits the data.</h6>
-                            <p>We are leaders in Shariah Aligned Consumer Financing</p>
+                            {/*<p>We are leaders in Shariah Aligned Consumer Financing</p>*/}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-2 gap-2 z-1">
+                    <div className="d-flex flex-row mb-4 gap-2 z-1">
                         <div className="step-number">
                             <h4>03</h4>
                         </div>
-                        <div className="step-description">
+                        <div className="step-description pb-3">
                             <h6>Loan Decision & Plan are shared.</h6>
-                            <p>We are leaders in Shariah Aligned Consumer Financing</p>
+                            {/*<p>We are leaders in Shariah Aligned Consumer Financing</p>*/}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-2 gap-2 z-1">
+                    <div className="d-flex flex-row mb-4 gap-2 z-1">
                         <div className="step-number">
                             <h4>04</h4>
                         </div>
-                        <div className="step-description">
+                        <div className="step-description pb-3">
                             <h6>KalPay pays on behalf of the student!</h6>
-                            <p>We are leaders in Shariah Aligned Consumer Financing</p>
+                            {/*<p>We are leaders in Shariah Aligned Consumer Financing</p>*/}
                         </div>
                     </div>
                 </div>
                 <div className="d-flex justify-content-center">
-                    <p className="loan-process-section-headline">For more details about the process click here</p>
+                    <p className="loan-process-section-headline">For more details about the process <span></span>
+                        <a style={{color: '#5C5C5C'}} href={window.location.origin + taleemGuide} target={"_blank"} rel={"noopener noreferrer"}>click here </a></p>
                 </div>
             </div>
             <div className="d-flex justify-content-center flex-column align-items-center mb-5">
                 <h3 className="loan-calculator-heading mb-5"> Loan Calculator </h3>
                 <div className="loan-calculator-box">
                     <div className="text-center pt-5">
-                        <img src={window.location.origin + logo} />
+                        <img src={window.location.origin + logo} alt={'logo'} />
                     </div>
                     {/*<div>*/}
                     {/*    <p className="pt-5 step-description text-start px-5"> Start adding your details to see instalments pricing!</p>*/}

@@ -1,5 +1,7 @@
+import { Link, NavLink } from 'react-router-dom';
+
 const logo = '/images/logo.png';
-import { Link } from 'react-router-dom';
+
 function Header() {
     return (
         <div className="container">
@@ -10,7 +12,7 @@ function Header() {
                 <button
                     className="navbar-toggler"
                     type="button"
-                    data-bs-toggle="collapse" // Use "data-bs-toggle" instead of "data-toggle"
+                    data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
                 >
                     <span className="navbar-toggler-icon"></span>
@@ -18,28 +20,32 @@ function Header() {
                 <div className="collapse navbar-collapse menu" id="navbarNav">
                     <ul className="navbar-nav ml-auto justify-content-end">
                         <li className="nav-item">
-                            <Link className="nav-link" to={'/'}>
+                            <NavLink exact className="nav-link" to={'/'} activeClassName="active">
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to={'/semester-fee'}>
+                            <NavLink className="nav-link" to={'/semester-fee'} activeClassName="active">
                                 Semester Fee
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to={'/admission-tests'}>
+                            <NavLink className="nav-link" to={'/admission-tests'} activeClassName="active">
                                 Admission Tests
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to={'/professional-exams'}>
+                            <NavLink className="nav-link" to={'/professional-exams'} activeClassName="active">
                                 Professional Exams
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScRu-aQshc3C-W0uhmIoBB4MmLzUOUmAMjZV5JIYDJVhgx_OQ/viewform"
-                            target={"_blank"} rel={"noreferrer"}>
+                            <a
+                                className="nav-link"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLScRu-aQshc3C-W0uhmIoBB4MmLzUOUmAMjZV5JIYDJVhgx_OQ/viewform"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 Apply Now
                             </a>
                         </li>

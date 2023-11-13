@@ -12,18 +12,18 @@ function Footer(){
             <div className="row mb-5 footer d-flex">
                 <div className="col-lg-4 col-12 d-flex flex-column gap-1 justify-content-center mx-lg-5 px-4 mt-2">
                     <Link to={'/'}>
-                        <img src={window.location.origin + footerLogo} className="mb-4" width={150}/>
+                        <img src={window.location.origin + footerLogo} className="mb-4" width={150} alt={'logo'}/>
                     </Link>
                     <h4 className="footer-heading">Consumer financing made easy!</h4>
-                    <p className="footer-paragraph">Study Now Pay Later in easy, interest-free installments with KalPay!</p>
+                    <p className="footer-paragraph">Study Now Pay Later in easy, interest-free instalments with KalPay!</p>
                 </div>
                 <div className="col-lg-2 col-12 mt-5 px-4 mx-lg-0">
                     <div className="d-flex flex-column justify-content-center">
                         <h2 className="footer-menu-heading"> Product</h2>
                         <div className="footer-menu mt-2 d-flex flex-column">
-                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'/semester-fee'}> Semester Fees </Link>
-                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'/admission-tests'}> Admission Tests </Link>
-                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'/professional-exams'}> Professional Exams </Link>
+                            <Link to={'/semester-fee'}> Semester Fees </Link>
+                            <Link to={'/admission-tests'}> Admission Tests </Link>
+                            <Link to={'/professional-exams'}> Professional Exams </Link>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ function Footer(){
                                 Apply Now </a>
                             <a style={{textDecoration: 'none', color:'#20282B'}} rel={"noreferrer"} href={"https://bnpl.kalpayfinancials.com/privacy.html"} target={"_blank"}>
                             Privacy Policy </a>
-                            <a style={{textDecoration: 'none', color:'#20282B'}} rel={"noreferrer"} href={"https://kalpayfinancials.com"} target={"_blank"}> We Are KalPay </a>
+                            <a style={{textDecoration: 'none', color:'#20282B'}} rel={"noreferrer"} href={"https://kalpayfinancials.com/about-us.html"} target={"_blank"}> We Are KalPay </a>
                         </div>
                     </div>
                 </div>
@@ -43,10 +43,9 @@ function Footer(){
                     <div className="d-flex flex-column justify-content-center">
                         <h2 className="footer-menu-heading"> Social Media</h2>
                         <div className="footer-menu mt-2 d-flex flex-column">
-                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'https://www.facebook.com/kalpayfinancials'}> Facebook </Link>
-                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'https://instagram.com/kal.pay'}> Instagram </Link>
-                            <Link style={{textDecoration: 'none', color:'#20282B'}} to={'https://instagram.com/kal.pay'}> LinkedIn </Link>
-
+                            <a style={{textDecoration: 'none', color:'#20282B'}} href="https://www.facebook.com/kalpayfinancials" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            <a style={{textDecoration: 'none', color:'#20282B'}} href="https://instagram.com/kal.pay" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            <a style={{textDecoration: 'none', color:'#20282B'}} href="https://www.linkedin.com/in/kalpay/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </div>
                     </div>
                 </div>

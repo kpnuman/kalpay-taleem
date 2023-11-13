@@ -6,7 +6,7 @@ import BasicTable from './CalculatorTable.jsx';
 const loader = '/images/loader-gif.gif';
 
 const data = [25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
-const secondSliderData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+const secondSliderData = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 export default function DiscreteSlider() {
     const [downPayment, setDownPayment] = useState(25);
     const [instalmentPlan, setInstalmentPlan] = useState(1);
@@ -22,7 +22,11 @@ export default function DiscreteSlider() {
     }
 
     function calculateTaleem(){
+        if (price === 0)
+            return;
+
         setShowLoader(true);
+        setShowTable(false);
 
         const baseUrl = 'https://admin.staging.kalpayfinancials.com/graphql';
 
@@ -110,7 +114,7 @@ export default function DiscreteSlider() {
                 step={1}
                 marks
                 min={1}
-                max={12}
+                max={9}
                 color="secondary"
                 getAriaValueText={(val)=>getInstalmentPlan(val)}
             />
@@ -122,10 +126,10 @@ export default function DiscreteSlider() {
         </Box>
 
             <div className="d-flex justify-content-center align-items-center mt-4 mb-5 flex-column">
-                <button onClick={calculateTaleem} className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>
+                <button disabled={!price} onClick={calculateTaleem} className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>
                     Calculate
                 </button>
-            { showLoader && <img src={window.location.origin + loader} />}
+            { showLoader && <img src={window.location.origin + loader} alt={'logo'} />}
             </div>
             { showTable && <BasicTable data={apiData} />  }
         </div>
