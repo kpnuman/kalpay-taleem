@@ -116,7 +116,26 @@ body {
 
 }
 
+.calculate-btn {
+  background: #BC263A;
+  border-radius: 15px;
+  width: 180px;
+  height: 60px;
+  text-decoration: none !important;
+  border: none !important;
+}
+
 .btn-text {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none !important;
+}
+
+.calculate-btn-text {
   font-family: 'Montserrat', 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -128,6 +147,15 @@ body {
 
 .btn:hover .btn-text {
   color: #000000 !important;
+}
+
+.calculate-btn:hover {
+  background: #000000;
+}
+
+.calculate-btn:hover .calculate-btn-text {
+  color: #fff !important;
+  background: #000000 !important;
 }
 
 .hero-img {
@@ -645,7 +673,7 @@ body {
 }
 
 .hero-section-semester-fee-heading {
-  font-size: 54px;
+  font-size: 47px;
   font-style: normal;
   font-weight: 700;
   line-height: 80px;
@@ -967,7 +995,12 @@ body {
   color: #e5acb4 !important;
 }
 
-.btn.disabled, .btn:disabled, fieldset:disabled .btn{
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+  color: #fff;
+  background: #ffcdcd !important;
+}
+
+.calculate-btn.disabled, .calculate-btn:disabled, fieldset:disabled .calculate-btn {
   color: #fff;
   background: #ffcdcd !important;
 }

@@ -125,13 +125,14 @@ export default function DiscreteSlider() {
             </div>
         </Box>
 
-            <div className="d-flex justify-content-center align-items-center mt-4 mb-5 flex-column">
-                <button disabled={!price} onClick={calculateTaleem} className="btn btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>
+            <div className="d-flex justify-content-center align-items-center mt-4 mb-2 flex-column">
+                <button disabled={!price} onClick={calculateTaleem} className="calculate-btn calculate-btn-text w-50" style={{borderRadius:"10px", height:"50px"}}>
                     Calculate
                 </button>
             { showLoader && <img src={window.location.origin + loader} alt={'logo'} />}
             </div>
             { showTable && <BasicTable data={apiData} />  }
+            { showTable && <p className={'text-center mt-5 px-3'}> The prices of our products/services are subject to change without prior notice due to fluctuating market conditions.* </p>  }
         </div>
     );
 }

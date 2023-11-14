@@ -10,9 +10,11 @@ const dversity = "/images/dversity.jpg";
 const taleemfinance = "/images/taleemfinance.jpg";
 const stem = "/images/stem.jpg";
 const pny = "/images/pny.jpg";
+const bia = "/images/bia.png";
+const rs = "/images/rs.png";
 
 function Gallery() {
-    const partnerImages = [kicksoft, lums, smart, mapped, dversity, pny, taleemfinance, stem];
+    const partnerImages = [kicksoft, lums, smart, mapped, dversity, pny, taleemfinance, stem, bia, rs];
 
     const settings = {
         dots: false,

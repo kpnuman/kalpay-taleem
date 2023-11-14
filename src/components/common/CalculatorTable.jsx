@@ -14,15 +14,15 @@ export default function PaymentTable({ data }) {
     const rows = [
         {
             payment: 'Down payment',
-            value: `Rs. ${apiResponse.data?.getInstallmentCalculationForTaleem?.downPayment.toFixed(2)}`,
+            value: `Rs. ${Math.trunc(Number(apiResponse.data?.getInstallmentCalculationForTaleem?.downPayment)).toLocaleString('en-US')}`,
         },
         {
             payment: `Monthly instalments x ${apiResponse.data?.getInstallmentCalculationForTaleem?.months}`,
-            value: `Rs. ${apiResponse.data?.getInstallmentCalculationForTaleem?.monthlyInstallment.toFixed(2)}`,
+            value: `Rs. ${Math.trunc(Number(apiResponse.data?.getInstallmentCalculationForTaleem?.monthlyInstallment)).toLocaleString('en-US')}`,
         },
         {
             payment: 'Total payment',
-            value: `Rs. ${apiResponse.data?.getInstallmentCalculationForTaleem?.totalPayment.toFixed(2)}`,
+            value: `Rs. ${Math.trunc(Number(apiResponse.data?.getInstallmentCalculationForTaleem?.totalPayment)).toLocaleString('en-US')}`,
         }
     ];
 

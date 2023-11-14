@@ -282,7 +282,7 @@ function HomePage() {
                 >
                   <div className="card-body">
                     <p>
-                      A down payment of anywhere between 25% - 60% is required and the remaining amount is divided into up to 9 monthly instalments.
+                      A down payment of anywhere between 25% - 60% is required and the remaining amount is divided into up to 6 monthly instalments.
                     </p>
                   </div>
                 </div>
@@ -519,7 +519,7 @@ function HomePage() {
                 >
                   <div className="card-body">
                     <p>
-                      You can fill out the form on our website or email us at taleem@kalpayfinancials.com. Our team will reach out to you for a preliminary meeting, collect the documents, share the instalment plan and confirm your order!
+                      KalPay Taleem is currently operational in Lahore. If you are registered with an educational institute in Lahore, you can avail of our service. However, for educational institutes outside of Lahore you can Email or WhatsApp us on our official number to know whether we can assist you in financing your education.
                     </p>
                   </div>
                 </div>
