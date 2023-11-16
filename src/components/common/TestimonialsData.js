@@ -1,9 +1,9 @@
 import t1 from '/images/t1.png';
 import t2 from '/images/t2.png';
-// import t3 from '/images/t3.png';
+import t3 from '/images/t3.png';
 import t4 from '/images/t4.png';
 import t5 from '/images/t5.png';
-import t6 from '/images/t6.png';
+// import t6 from '/images/t6.png';
 import t7 from '/images/t7.png';
 import t8 from '/images/t8.png';
 import t9 from '/images/t9.png';
@@ -42,7 +42,7 @@ const testimonials = [
     {
         name: "LUMS Student",
         jobTitle: "Undergraduate - SDSB",
-        review:"“ This is one of the most inclusive and student-friendly initiatives which has made the courses of financial decision making so much more smoother and easier at my end. My father, who bore the cost of my semester fee, is far more relieved now looking at the monthly instalment vouchers instead of the lum sum amount at the start of the semester. “",
+        review:"“ This is one of the most inclusive and student-friendly initiatives which has made the courses of financial decision making so much more smoother and easier at my end. My father, who bare the cost of my semester fee, is far more relieved now looking at the monthly instalment vouchers instead of the lum sum amount at the start of the semester. “",
         rating: 5,
         img: t2
     },
@@ -70,9 +70,9 @@ const testimonials = [
     {
         name: "LUMS Student",
         jobTitle: "Undergraduate - HSS",
-        review: "“ My experience will kalpay has been wonderful. Besides helping me out during a tough financial position, the process itself was straightforward and the kalpay team really were exceptionally helpful, responsive and accomodating. ”",
+        review: "“ My experience with kalpay has been wonderful. Besides helping me out during a tough financial position, the process itself was straightforward and the kalpay team really were exceptionally helpful, responsive and accomodating. ”",
         rating: 5,
-        img: t6
+        img: t3
     },
     {
         name: "LUMS Student",
@@ -120,7 +120,7 @@ const testimonials = [
     {
         name: "LUMS Student",
         jobTitle: "Undergraduate - SDSB",
-        review: "“ With the sole salary of our father, it has always been difficult to bear our educational cost.  As I was in dire need of a lump sum amount for my semester fee at LUMS, I turned to KalPay Taaleem with the hope of finding a solution. Not only did Kal pay Taaleem pay my semester fee, but it did in such a flexible way that I can’t even imagine. Its customer service is amazing. And I did not have to worry about the deadline because my fee was paid within 3 days of my application. Now all I need to do is just pay the small monthly instalments which is way easier than the huge lump sum amount. ”",
+        review: "“ With the sole salary of our father, it has always been difficult to bear our educational cost.  As I was in dire need of a lum sum amount for my semester fee at LUMS, I turned to KalPay Taaleem with the hope of finding a solution. Not only did Kal pay Taaleem pay my semester fee, but it did in such a flexible way that I can’t even imagine. Its customer service is amazing. And I did not have to worry about the deadline because my fee was paid within 3 days of my application. Now all I need to do is just pay the small monthly instalments which is way easier than the huge lum sum amount. ”",
         rating: 5,
         img: t14
     },

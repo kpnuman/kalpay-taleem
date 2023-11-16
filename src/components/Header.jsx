@@ -18,7 +18,7 @@ function Header() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse menu" id="navbarNav">
-                    <ul className="navbar-nav ml-auto justify-content-end">
+                    <ul className="navbar-nav ml-auto justify-content-end" style={{gap: '12px'}}>
                         <li className="nav-item">
                             <NavLink exact className="nav-link" to={'/'} activeClassName="active">
                                 Home

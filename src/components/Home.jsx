@@ -32,8 +32,10 @@ function HomePage() {
           <div className="col-md-6 hero-section-left">
             {/* Left Column */}
             <div className="d-flex flex-column justify-content-center align-items-lg-start align-items-center h-100">
-              <h1 className="hero-section-study-now-heading">Study Now</h1>
-              <h1 className="hero-section-pay-later-heading">Pay Later</h1>
+              {/*<h1 className="hero-section-study-now-heading">Study Now</h1>*/}
+              {/*<h1 className="hero-section-pay-later-heading">Pay Later</h1>*/}
+              <h1 className="hero-section-semester-fee-heading">Study Now <br />
+                <span style={{ color: "#20282B" }}> Pay Later </span></h1>
               <h4 className="hero-section-text">
                 Manage your educational expenses stress-free!
               </h4>

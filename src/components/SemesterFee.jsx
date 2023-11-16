@@ -18,8 +18,8 @@ function SemesterFee() {
                 <div className="row">
                     <div className="col-md-6 hero-section-left">
                         {/* Left Column */}
-                        <div className="d-flex flex-row justify-content-sm-center justify-content-xl-start align-items-center align-items-lg-start align-items-xl-start">
-                            <h1 className="hero-section-semester-fee-heading">Learn Now
+                        <div className="d-flex flex-column justify-content-sm-center justify-content-xl-start align-items-center align-items-lg-start align-items-xl-start">
+                            <h1 className="hero-section-semester-fee-heading">Learn Now <br />
                                 <span style={{ color: "#20282B" }}> Pay Later </span></h1>
                             {/*<h1 className="hero-section-pay-later-heading">Pay Later</h1>*/}
                         </div>
@@ -45,7 +45,7 @@ function SemesterFee() {
                 </div>
             </div>
             <div className="row justify-content-center loan-process-section pt-5">
-                <h3 className="continously-expanding-heading pt-5 pb-5"> Continuously Expanding Our Reach…….</h3>
+                <h3 className="continously-expanding-heading pt-5 pb-5"> Continuously Expanding Our Reach ...</h3>
                 <div className="px-5">
                     <div className="px-5">
                         <Gallery />
